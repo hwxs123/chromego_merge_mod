@@ -9,7 +9,7 @@ on:
   workflow_dispatch:  # 触发手动事件
 jobs:
   merge:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     steps:
       - name: Checkout repository

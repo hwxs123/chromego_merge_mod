@@ -1,0 +1,412 @@
+port: 7890
+allow-lan: true
+mode: rule
+log-level: info
+unified-delay: true
+global-client-fingerprint: chrome
+dns:
+  enable: true
+  listen: :53
+  ipv6: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  default-nameserver:
+  - 223.5.5.5
+  - 8.8.8.8
+  nameserver:
+  - https://dns.alidns.com/dns-query
+  - https://doh.pub/dns-query
+  fallback:
+  - https://1.0.0.1/dns-query
+  - tls://dns.google
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+    - 240.0.0.0/4
+proxies:
+- name: Unknown_hysteria_01
+  type: hysteria
+  server: 207.174.28.39
+  port: 51165
+  ports: 30000-40000
+  auth_str: dongtaiwang.com
+  alpn:
+  - h3
+  sni: www.bing.com
+  skip-cert-verify: true
+  up: 11 Mbps
+  down: 55 Mbps
+- name: Unknown_hysteria_11
+  type: hysteria
+  server: 195.154.200.178
+  port: 10312
+  auth-str: dongtaiwang.com
+  obfs: dongtaiwang.com
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: Unknown_hysteria_21
+  type: hysteria
+  server: 108.181.24.77
+  port: 35862
+  ports: 40000-50000
+  auth-str: dongtaiwang.com
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: Unknown_hysteria_31
+  type: hysteria
+  server: 195.154.200.40
+  port: 2345
+  auth_str: dongtaiwang.com
+  alpn:
+  - h3
+  sni: www.bing.com
+  skip-cert-verify: true
+  up: 11 Mbps
+  down: 55 Mbps
+- name: Unknown_hysteria_41
+  type: hysteria
+  server: 207.174.28.39
+  port: 51165
+  ports: 30000-40000
+  auth_str: dongtaiwang.com
+  alpn:
+  - h3
+  sni: www.bing.com
+  skip-cert-verify: true
+  up: 11 Mbps
+  down: 55 Mbps
+- name: Unknown_hysteria_51
+  type: hysteria
+  server: 195.154.200.178
+  port: 10312
+  auth-str: dongtaiwang.com
+  obfs: dongtaiwang.com
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: Unknown_hysteria_61
+  type: hysteria
+  server: 195.154.200.178
+  port: 10312
+  auth-str: dongtaiwang.com
+  obfs: dongtaiwang.com
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: Unknown_hysteria_71
+  type: hysteria
+  server: 108.181.24.77
+  port: 35862
+  ports: 40000-50000
+  auth-str: dongtaiwang.com
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: Unknown_hysteria_81
+  type: hysteria
+  server: 108.181.24.77
+  port: 35862
+  ports: 40000-50000
+  auth-str: dongtaiwang.com
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: Unknown_hy_0
+  type: hysteria
+  server: 104.192.224.142
+  port: 14747
+  ports: 14747
+  auth_str: dongtaiwang.com
+  up: 1000
+  down: 1000
+  fast-open: true
+  protocol: udp
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: Unknown_hy_1
+  type: hysteria
+  server: 104.192.224.142
+  port: 14747
+  ports: 14747
+  auth_str: dongtaiwang.com
+  up: 1000
+  down: 1000
+  fast-open: true
+  protocol: udp
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: Unknown_hy_2
+  type: hysteria
+  server: 195.154.200.40
+  port: 2345
+  ports: 2345
+  auth_str: dongtaiwang.com
+  up: 1000
+  down: 1000
+  fast-open: true
+  protocol: udp
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: Unknown_hy_3
+  type: hysteria
+  server: 104.192.224.142
+  port: 14747
+  ports: 14747
+  auth_str: dongtaiwang.com
+  up: 1000
+  down: 1000
+  fast-open: true
+  protocol: udp
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: Unknown_hy_4
+  type: hysteria
+  server: 108.181.24.77
+  port: 35862
+  ports: 40000-50000
+  auth_str: dongtaiwang.com
+  up: 1000
+  down: 1000
+  fast-open: true
+  protocol: udp
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: Unknown_hy_5
+  type: hysteria
+  server: 104.192.224.142
+  port: 14747
+  ports: 14747
+  auth_str: dongtaiwang.com
+  up: 1000
+  down: 1000
+  fast-open: true
+  protocol: udp
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: Unknown_hy2_0
+  type: hysteria2
+  server: 108.181.5.130
+  port: 7329
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: Unknown_hy2_1
+  type: hysteria2
+  server: 108.181.5.130
+  port: 7329
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: Unknown_hy2_2
+  type: hysteria2
+  server: 195.154.33.70
+  port: 42259
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: Unknown_hy2_3
+  type: hysteria2
+  server: 108.181.5.130
+  port: 7329
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: Unknown_hy2_4
+  type: hysteria2
+  server: 195.154.33.70
+  port: 42259
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: Unknown_hy2_5
+  type: hysteria2
+  server: 108.181.5.130
+  port: 7329
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: Unknown_reality_1
+  type: vless
+  server: 185.22.155.105
+  port: 34077
+  uuid: 2349e5ae-2f2e-41bb-a169-a0b4c9dcd3e9
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  servername: aws.amazon.com
+  reality-opts:
+    public-key: XENnre8gNAN68H0IBlu_G33iCGC4IIO2nHnxV90kdE0
+    short-id: ''
+- name: Unknown_reality_2
+  type: vless
+  server: 185.22.153.75
+  port: 21315
+  uuid: 095ad0e3-9ed9-4346-9108-58b40e664f5c
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  servername: www.yahoo.com
+  reality-opts:
+    public-key: YySncDZNohAu8pygK6hAG2OcptADdEJBwArHe4amnm8
+    short-id: d019a9ad
+- name: Unknown_reality_3
+  type: vless
+  server: 36.226.252.19
+  port: 56870
+  uuid: 7c4efc45-42f7-48d8-a741-6093cd2886a7
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  servername: www.yahoo.com
+  reality-opts:
+    public-key: 9J1xcf0tI7OQ8Z6ULcruIIjsM5AK3nZTXdOK6GIhwmA
+    short-id: 239c3cef
+- name: Unknown_reality_4
+  type: vless
+  server: 185.22.155.105
+  port: 34077
+  uuid: 2349e5ae-2f2e-41bb-a169-a0b4c9dcd3e9
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  servername: aws.amazon.com
+  reality-opts:
+    public-key: XENnre8gNAN68H0IBlu_G33iCGC4IIO2nHnxV90kdE0
+    short-id: ''
+- name: Unknown_reality_5
+  type: vless
+  server: 185.22.155.105
+  port: 34077
+  uuid: 2349e5ae-2f2e-41bb-a169-a0b4c9dcd3e9
+  network: tcp
+  tls: true
+  udp: true
+  flow: xtls-rprx-vision
+  client-fingerprint: chrome
+  servername: aws.amazon.com
+  reality-opts:
+    public-key: XENnre8gNAN68H0IBlu_G33iCGC4IIO2nHnxV90kdE0
+    short-id: ''
+proxy-groups:
+- name: 节点选择
+  type: select
+  proxies:
+  - 自动选择
+  - DIRECT
+  - Unknown_hysteria_01
+  - Unknown_hysteria_11
+  - Unknown_hysteria_21
+  - Unknown_hysteria_31
+  - Unknown_hysteria_41
+  - Unknown_hysteria_51
+  - Unknown_hysteria_61
+  - Unknown_hysteria_71
+  - Unknown_hysteria_81
+  - Unknown_hy_0
+  - Unknown_hy_1
+  - Unknown_hy_2
+  - Unknown_hy_3
+  - Unknown_hy_4
+  - Unknown_hy_5
+  - Unknown_hy2_0
+  - Unknown_hy2_1
+  - Unknown_hy2_2
+  - Unknown_hy2_3
+  - Unknown_hy2_4
+  - Unknown_hy2_5
+  - Unknown_reality_1
+  - Unknown_reality_2
+  - Unknown_reality_3
+  - Unknown_reality_4
+  - Unknown_reality_5
+- name: 自动选择
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  proxies:
+  - Unknown_hysteria_01
+  - Unknown_hysteria_11
+  - Unknown_hysteria_21
+  - Unknown_hysteria_31
+  - Unknown_hysteria_41
+  - Unknown_hysteria_51
+  - Unknown_hysteria_61
+  - Unknown_hysteria_71
+  - Unknown_hysteria_81
+  - Unknown_hy_0
+  - Unknown_hy_1
+  - Unknown_hy_2
+  - Unknown_hy_3
+  - Unknown_hy_4
+  - Unknown_hy_5
+  - Unknown_hy2_0
+  - Unknown_hy2_1
+  - Unknown_hy2_2
+  - Unknown_hy2_3
+  - Unknown_hy2_4
+  - Unknown_hy2_5
+  - Unknown_reality_1
+  - Unknown_reality_2
+  - Unknown_reality_3
+  - Unknown_reality_4
+  - Unknown_reality_5
+rules:
+- DOMAIN,clash.razord.top,DIRECT
+- DOMAIN,yacd.haishan.me,DIRECT
+- GEOIP,LAN,DIRECT
+- GEOIP,CN,DIRECT
+- MATCH,节点选择

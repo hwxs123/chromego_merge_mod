@@ -241,8 +241,8 @@ proxies:
   skip-cert-verify: true
 - name: Unknown_hy2_2
   type: hysteria2
-  server: 202.5.31.3
-  port: 38654
+  server: 195.154.33.70
+  port: 42259
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com

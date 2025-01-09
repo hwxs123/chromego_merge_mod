@@ -300,18 +300,18 @@ proxies:
     short-id: ''
 - name: Unknown_reality_2
   type: vless
-  server: 202.5.31.3
-  port: 9160
-  uuid: 86b79227-7943-4a4e-aead-03f7537f5215
+  server: 185.22.153.75
+  port: 21315
+  uuid: 095ad0e3-9ed9-4346-9108-58b40e664f5c
   network: tcp
   tls: true
   udp: true
   flow: xtls-rprx-vision
   client-fingerprint: chrome
-  servername: dash.cloudflare.com
+  servername: www.yahoo.com
   reality-opts:
-    public-key: fdZm7k4wrEvoWimsdcS7IJvMA_8GHHXZokgfmpodx0s
-    short-id: ''
+    public-key: YySncDZNohAu8pygK6hAG2OcptADdEJBwArHe4amnm8
+    short-id: d019a9ad
 - name: Unknown_reality_3
   type: vless
   server: 36.226.244.225

@@ -76,14 +76,15 @@ proxies:
   down: 55 Mbps
 - name: Unknown_hysteria_41
   type: hysteria
-  server: 207.174.28.39
-  port: 51165
-  ports: 30000-40000
-  auth_str: dongtaiwang.com
+  server: 108.181.24.77
+  port: 35862
+  ports: 40000-50000
+  auth-str: dongtaiwang.com
+  sni: bing.com
+  skip-cert-verify: true
   alpn:
   - h3
-  sni: www.bing.com
-  skip-cert-verify: true
+  protocol: udp
   up: 11 Mbps
   down: 55 Mbps
 - name: Unknown_hysteria_51

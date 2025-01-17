@@ -64,45 +64,19 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_vless_31
-  type: vless
+- name: Unknown_hysteria2_31
+  type: hysteria2
   server: 195.154.200.40
-  port: 47980
-  uuid: 53044dba-93ee-43d5-b944-be34271a209e
-  network: tcp
-  udp: true
-  tls: true
-  flow: xtls-rprx-vision
-  servername: www.ebay.com
-  reality-opts:
-    public-key: IEvQvREKzPsLnipyFxjHjc7ayJpQIZwrqTtwLi2LgHI
-    short-id: null
-  client-fingerprint: chrome
-- name: Unknown_hysteria_32
-  type: hysteria
-  server: 195.154.200.178
-  port: 10312
-  auth-str: dongtaiwang.com
-  obfs: dongtaiwang.com
-  sni: bing.com
-  skip-cert-verify: true
+  port: 42259
+  ports: 20000-30000
+  password: dongtaiwang.com
   alpn:
   - h3
-  protocol: udp
+  sni: www.bing.com
+  skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_ss_41
-  type: ss
-  server: 108.181.24.77
-  port: 33449
-  cipher: 2022-blake3-chacha20-poly1305
-  password: ASXmhqODZasnV777P2m33eQ9mCU5KXY86dXJQTuWFW8=
-  plugin: shadow-tls
-  plugin-opts:
-    host: nijigen-works.jp
-    password: YEudERP9ZstwNZpOWytH3Ds4sSEgj8GVZk7OQEGDEpo=
-    version: 3
-- name: Unknown_hysteria_42
+- name: Unknown_hysteria_41
   type: hysteria
   server: 108.181.24.77
   port: 35862
@@ -392,10 +366,8 @@ proxy-groups:
   - Unknown_hysteria_01
   - Unknown_hysteria_11
   - Unknown_hysteria_21
-  - Unknown_vless_31
-  - Unknown_hysteria_32
-  - Unknown_ss_41
-  - Unknown_hysteria_42
+  - Unknown_hysteria2_31
+  - Unknown_hysteria_41
   - Unknown_hysteria_51
   - Unknown_hysteria_61
   - Unknown_hysteria_71
@@ -427,10 +399,8 @@ proxy-groups:
   - Unknown_hysteria_01
   - Unknown_hysteria_11
   - Unknown_hysteria_21
-  - Unknown_vless_31
-  - Unknown_hysteria_32
-  - Unknown_ss_41
-  - Unknown_hysteria_42
+  - Unknown_hysteria2_31
+  - Unknown_hysteria_41
   - Unknown_hysteria_51
   - Unknown_hysteria_61
   - Unknown_hysteria_71

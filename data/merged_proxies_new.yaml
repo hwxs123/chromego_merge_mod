@@ -154,29 +154,29 @@ proxies:
   down: 55 Mbps
 - name: Unknown_hy_0
   type: hysteria
-  server: 104.192.224.142
-  port: 14747
-  ports: 14747
+  server: 208.87.243.187
+  port: 63721
+  ports: 47000-48000
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
   fast-open: true
   protocol: udp
-  sni: bing.com
+  sni: apple.com
   skip-cert-verify: true
   alpn:
   - h3
 - name: Unknown_hy_1
   type: hysteria
-  server: 104.192.224.142
-  port: 14747
-  ports: 14747
+  server: 208.87.243.187
+  port: 63721
+  ports: 47000-48000
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
   fast-open: true
   protocol: udp
-  sni: bing.com
+  sni: apple.com
   skip-cert-verify: true
   alpn:
   - h3

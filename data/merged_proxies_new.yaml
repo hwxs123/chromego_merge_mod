@@ -66,9 +66,8 @@ proxies:
   down: 55 Mbps
 - name: Unknown_hysteria_31
   type: hysteria
-  server: 108.181.24.77
-  port: 11512
-  ports: 20000-30000
+  server: 62.210.10.113
+  port: 11503
   auth-str: dongtaiwang.com
   sni: apple.com
   skip-cert-verify: true
@@ -304,9 +303,9 @@ proxies:
     short-id: 1f8b5201
 - name: Unknown_reality_2
   type: vless
-  server: 185.22.153.75
-  port: 21315
-  uuid: 095ad0e3-9ed9-4346-9108-58b40e664f5c
+  server: 62.210.125.97
+  port: 65280
+  uuid: 5bf1ced2-27ad-4908-83db-0b1f9a4f6047
   network: tcp
   tls: true
   udp: true
@@ -314,8 +313,8 @@ proxies:
   client-fingerprint: chrome
   servername: www.yahoo.com
   reality-opts:
-    public-key: YySncDZNohAu8pygK6hAG2OcptADdEJBwArHe4amnm8
-    short-id: d019a9ad
+    public-key: 7NC6hW-P41pciUEhAylbleVf4a2ZStJVuJpjmZgp7iQ
+    short-id: 5628b8f0
 - name: Unknown_reality_3
   type: vless
   server: 185.22.153.75

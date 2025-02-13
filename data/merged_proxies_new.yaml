@@ -102,19 +102,18 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_hysteria_61
-  type: hysteria
-  server: 195.154.200.178
-  port: 34911
-  auth-str: dongtaiwang.com
-  obfs: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
+- name: Unknown_tuic_61
+  server: 185.22.152.125
+  port: 59728
+  type: tuic
+  uuid: 074f49ce-e698-4eca-9a7f-25b480737c5d
+  password: 074f49ce-e698-4eca-9a7f-25b480737c5d
   alpn:
   - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
+  disable-sni: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
 - name: Unknown_hysteria_71
   type: hysteria
   server: 108.181.24.77
@@ -128,19 +127,18 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_hysteria_81
-  type: hysteria
-  server: 108.181.24.77
-  port: 11512
-  ports: 20000-30000
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
+- name: Unknown_tuic_81
+  server: 185.22.152.125
+  port: 59728
+  type: tuic
+  uuid: 074f49ce-e698-4eca-9a7f-25b480737c5d
+  password: 074f49ce-e698-4eca-9a7f-25b480737c5d
   alpn:
   - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
+  disable-sni: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
 - name: Unknown_hy_0
   type: hysteria
   server: 208.87.243.187
@@ -369,9 +367,9 @@ proxy-groups:
   - Unknown_hysteria_31
   - Unknown_hysteria_41
   - Unknown_hysteria_51
-  - Unknown_hysteria_61
+  - Unknown_tuic_61
   - Unknown_hysteria_71
-  - Unknown_hysteria_81
+  - Unknown_tuic_81
   - Unknown_hy_0
   - Unknown_hy_1
   - Unknown_hy_2
@@ -402,9 +400,9 @@ proxy-groups:
   - Unknown_hysteria_31
   - Unknown_hysteria_41
   - Unknown_hysteria_51
-  - Unknown_hysteria_61
+  - Unknown_tuic_61
   - Unknown_hysteria_71
-  - Unknown_hysteria_81
+  - Unknown_tuic_81
   - Unknown_hy_0
   - Unknown_hy_1
   - Unknown_hy_2

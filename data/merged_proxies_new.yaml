@@ -143,9 +143,9 @@ proxies:
   congestion-controller: bbr
 - name: Unknown_hy_0
   type: hysteria
-  server: 208.87.243.187
-  port: 63721
-  ports: 47000-48000
+  server: 185.22.155.71
+  port: 63717
+  ports: 40000-50000
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -158,8 +158,8 @@ proxies:
 - name: Unknown_hy_1
   type: hysteria
   server: 208.87.243.187
-  port: 63721
-  ports: 47000-48000
+  port: 40528
+  ports: 40528
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000

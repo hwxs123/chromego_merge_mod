@@ -154,20 +154,6 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: Unknown_hy_1
-  type: hysteria
-  server: 208.87.243.187
-  port: 40528
-  ports: 40528
-  auth_str: dongtaiwang.com
-  up: 1000
-  down: 1000
-  fast-open: true
-  protocol: udp
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
 - name: Unknown_hy_2
   type: hysteria
   server: 195.154.200.40
@@ -358,7 +344,6 @@ proxy-groups:
   - Unknown_hysteria_71
   - Unknown_tuic_81
   - Unknown_hy_0
-  - Unknown_hy_1
   - Unknown_hy_2
   - Unknown_hy_3
   - Unknown_hy_4
@@ -390,7 +375,6 @@ proxy-groups:
   - Unknown_hysteria_71
   - Unknown_tuic_81
   - Unknown_hy_0
-  - Unknown_hy_1
   - Unknown_hy_2
   - Unknown_hy_3
   - Unknown_hy_4

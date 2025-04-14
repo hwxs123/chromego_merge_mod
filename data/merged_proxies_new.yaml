@@ -214,8 +214,8 @@ proxies:
   skip-cert-verify: true
 - name: Unknown_hy2_1
   type: hysteria2
-  server: 108.181.5.130
-  port: 15544
+  server: 46.17.41.5
+  port: 12904
   password: dongtaiwang.com
   fast-open: true
   sni: apple.com
@@ -246,8 +246,8 @@ proxies:
   skip-cert-verify: true
 - name: Unknown_hy2_5
   type: hysteria2
-  server: 108.181.5.130
-  port: 15544
+  server: 46.17.41.5
+  port: 12904
   password: dongtaiwang.com
   fast-open: true
   sni: apple.com

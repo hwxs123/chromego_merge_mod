@@ -192,9 +192,9 @@ proxies:
   - h3
 - name: Unknown_hy_5
   type: hysteria
-  server: 208.87.243.187
-  port: 40528
-  ports: 40528
+  server: 51.159.226.1
+  port: 14241
+  ports: 14241
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -207,7 +207,7 @@ proxies:
 - name: Unknown_hy2_0
   type: hysteria2
   server: 108.181.5.130
-  port: 65232
+  port: 57773
   password: dongtaiwang.com
   fast-open: true
   sni: apple.com
@@ -231,7 +231,7 @@ proxies:
 - name: Unknown_hy2_3
   type: hysteria2
   server: 108.181.5.130
-  port: 65232
+  port: 57773
   password: dongtaiwang.com
   fast-open: true
   sni: apple.com
@@ -239,7 +239,7 @@ proxies:
 - name: Unknown_hy2_4
   type: hysteria2
   server: 51.159.226.1
-  port: 43496
+  port: 44464
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com

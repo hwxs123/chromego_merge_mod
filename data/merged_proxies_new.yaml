@@ -136,9 +136,9 @@ proxies:
   - h3
 - name: Unknown_hy_1
   type: hysteria
-  server: 208.87.243.187
-  port: 40528
-  ports: 40528
+  server: 51.159.226.1
+  port: 14241
+  ports: 14241
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000

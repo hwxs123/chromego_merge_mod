@@ -69,30 +69,10 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_tuic_41
-  server: 108.181.5.131
-  port: 34008
-  type: tuic
-  uuid: f84c91a4-0125-4495-82f3-732cd0a0bba8
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  sni: bing.com
-  skip-cert-verify: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
 - name: Unknown_mieru_51
   type: mieru
   server: 108.181.23.41
   port: 28676
-  transport: TCP
-  username: dongtaiwang.com
-  password: dongtaiwang.com
-- name: Unknown_mieru_61
-  type: mieru
-  server: 185.22.155.105
-  port: 25622
   transport: TCP
   username: dongtaiwang.com
   password: dongtaiwang.com
@@ -236,14 +216,6 @@ proxies:
   fast-open: true
   sni: apple.com
   skip-cert-verify: true
-- name: Unknown_hy2_4
-  type: hysteria2
-  server: 108.181.5.130
-  port: 57773
-  password: dongtaiwang.com
-  fast-open: true
-  sni: apple.com
-  skip-cert-verify: true
 - name: Unknown_hy2_5
   type: hysteria2
   server: 46.17.41.5
@@ -346,9 +318,7 @@ proxy-groups:
   - Unknown_mieru_11
   - Unknown_hysteria_21
   - Unknown_hysteria_31
-  - Unknown_tuic_41
   - Unknown_mieru_51
-  - Unknown_mieru_61
   - Unknown_hysteria_71
   - Unknown_hysteria_81
   - Unknown_hy_0
@@ -361,7 +331,6 @@ proxy-groups:
   - Unknown_hy2_1
   - Unknown_hy2_2
   - Unknown_hy2_3
-  - Unknown_hy2_4
   - Unknown_hy2_5
   - Unknown_reality_0
   - Unknown_reality_1
@@ -379,9 +348,7 @@ proxy-groups:
   - Unknown_mieru_11
   - Unknown_hysteria_21
   - Unknown_hysteria_31
-  - Unknown_tuic_41
   - Unknown_mieru_51
-  - Unknown_mieru_61
   - Unknown_hysteria_71
   - Unknown_hysteria_81
   - Unknown_hy_0
@@ -394,7 +361,6 @@ proxy-groups:
   - Unknown_hy2_1
   - Unknown_hy2_2
   - Unknown_hy2_3
-  - Unknown_hy2_4
   - Unknown_hy2_5
   - Unknown_reality_0
   - Unknown_reality_1

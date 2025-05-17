@@ -206,11 +206,11 @@ proxies:
   - h3
 - name: Unknown_hy2_0
   type: hysteria2
-  server: 108.181.5.130
-  port: 57773
+  server: hy2-1.694463.xyz
+  port: 4489
   password: dongtaiwang.com
   fast-open: true
-  sni: apple.com
+  sni: www.bing.com
   skip-cert-verify: true
 - name: Unknown_hy2_1
   type: hysteria2

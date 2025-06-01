@@ -96,18 +96,20 @@ proxies:
   transport: TCP
   username: dongtaiwang.com
   password: dongtaiwang.com
-- name: Unknown_hysteria_71
-  type: hysteria
-  server: 108.181.24.77
-  port: 11512
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
+- name: Unknown_anytls_71
+  type: anytls
+  server: 208.87.243.187
+  port: 61289
+  password: dongtaiwang.com
+  client-fingerprint: chrome
+  udp: true
+  idle-session-check-interval: 30
+  idle-session-timeout: 30
+  min-idle-session: 0
   alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
+  - h2
+  - http/1.1
+  skip-cert-verify: true
 - name: Unknown_hysteria_81
   type: hysteria
   server: 108.181.24.77
@@ -349,7 +351,7 @@ proxy-groups:
   - Unknown_tuic_41
   - Unknown_mieru_51
   - Unknown_mieru_61
-  - Unknown_hysteria_71
+  - Unknown_anytls_71
   - Unknown_hysteria_81
   - Unknown_hy_0
   - Unknown_hy_1
@@ -382,7 +384,7 @@ proxy-groups:
   - Unknown_tuic_41
   - Unknown_mieru_51
   - Unknown_mieru_61
-  - Unknown_hysteria_71
+  - Unknown_anytls_71
   - Unknown_hysteria_81
   - Unknown_hy_0
   - Unknown_hy_1

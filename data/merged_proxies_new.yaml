@@ -284,9 +284,9 @@ proxies:
     short-id: ''
 - name: Unknown_reality_2
   type: vless
-  server: 198.40.52.26
-  port: 20783
-  uuid: 942e9337-6cd1-471e-ae3e-6a4ae0f38465
+  server: tw-2.534582.xyz
+  port: 39747
+  uuid: cf111519-9992-4e2e-8675-8e8edc178578
   network: tcp
   tls: true
   udp: true
@@ -294,7 +294,7 @@ proxies:
   client-fingerprint: chrome
   servername: aws.amazon.com
   reality-opts:
-    public-key: hoDqIoXDTQap0fGHAsSkCPmGq3CpUjjnholUcahMb3Y
+    public-key: nHo49RB7F74I1uH_YitKGY5GxejTq0XcY8BbEKe99xE
     short-id: ''
 - name: Unknown_reality_3
   type: vless

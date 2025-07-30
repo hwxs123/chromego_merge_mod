@@ -135,8 +135,8 @@ proxies:
 - name: Unknown_hy_0
   type: hysteria
   server: 208.87.243.151
-  port: 17549
-  ports: 17549
+  port: 38845
+  ports: 38845
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000

@@ -171,10 +171,10 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
 - name: Unknown_tuic_41
-  server: 108.181.5.131
-  port: 22998
+  server: 62.210.10.140
+  port: 23556
   type: tuic
-  uuid: f350ada4-7d6a-46d0-bc44-27f93436286f
+  uuid: e732a82b-612f-415d-a9f8-e4b1df37d066
   password: dongtaiwang.com
   alpn:
   - h3
@@ -183,13 +183,19 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: Unknown_mieru_51
-  type: mieru
-  server: 108.181.23.41
-  port: 50223
-  transport: TCP
-  username: dongtaiwang.com
+- name: Unknown_tuic_51
+  server: 2001:bc8:32d7:312::2
+  port: 23556
+  type: tuic
+  uuid: e732a82b-612f-415d-a9f8-e4b1df37d066
   password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
 - name: Unknown_hysteria_61
   type: hysteria
   server: 108.181.24.77
@@ -443,14 +449,6 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: Unknown_hy2_4
-  type: hysteria2
-  server: 108.181.22.213
-  port: 15167
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.bing.com
-  skip-cert-verify: true
 - name: Unknown_hy2_5
   type: hysteria2
   server: 51.158.218.2
@@ -506,7 +504,7 @@ proxy-groups:
   - Unknown_hysteria_34
   - Unknown_hysteria_35
   - Unknown_tuic_41
-  - Unknown_mieru_51
+  - Unknown_tuic_51
   - Unknown_hysteria_61
   - Unknown_tuic_71
   - Unknown_tuic_72
@@ -528,7 +526,6 @@ proxy-groups:
   - Unknown_hy2_1
   - Unknown_hy2_2
   - Unknown_hy2_3
-  - Unknown_hy2_4
   - Unknown_hy2_5
   - Unknown_reality_1
   - Unknown_reality_5
@@ -551,7 +548,7 @@ proxy-groups:
   - Unknown_hysteria_34
   - Unknown_hysteria_35
   - Unknown_tuic_41
-  - Unknown_mieru_51
+  - Unknown_tuic_51
   - Unknown_hysteria_61
   - Unknown_tuic_71
   - Unknown_tuic_72
@@ -573,7 +570,6 @@ proxy-groups:
   - Unknown_hy2_1
   - Unknown_hy2_2
   - Unknown_hy2_3
-  - Unknown_hy2_4
   - Unknown_hy2_5
   - Unknown_reality_1
   - Unknown_reality_5

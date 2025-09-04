@@ -26,10 +26,10 @@ dns:
     - 240.0.0.0/4
 proxies:
 - name: Unknown_tuic_01
-  server: 108.181.5.131
-  port: 22998
+  server: 62.210.10.140
+  port: 23556
   type: tuic
-  uuid: f350ada4-7d6a-46d0-bc44-27f93436286f
+  uuid: e732a82b-612f-415d-a9f8-e4b1df37d066
   password: dongtaiwang.com
   alpn:
   - h3

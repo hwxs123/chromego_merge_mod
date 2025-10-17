@@ -6,4 +6,3 @@ https://raw.githubusercontent.com/Alvin9999/PAC/master/backup/img/1/2/ipp/clash.
 https://raw.githubusercontent.com/Alvin9999/PAC/master/backup/img/1/2/ipp/clash.meta2/3/config.yaml
 https://raw.githubusercontent.com/Alvin9999/PAC/master/backup/img/1/2/ipp/clash.meta2/4/config.yaml
 https://raw.githubusercontent.com/Alvin9999/PAC/master/backup/img/1/2/ipp/clash.meta2/5/config.yaml
-https://raw.githubusercontent.com/Alvin9999/PAC/master/backup/img/1/2/ipp/clash.meta2/6/config.yaml

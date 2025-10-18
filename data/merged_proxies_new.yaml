@@ -591,8 +591,8 @@ proxies:
   - h3
 - name: Unknown_hy2_0
   type: hysteria2
-  server: 51.158.218.2
-  port: 50066
+  server: '[2604'
+  port: 6600
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com

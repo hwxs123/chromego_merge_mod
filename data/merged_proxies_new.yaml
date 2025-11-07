@@ -307,6 +307,62 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
+- name: Unknown_hy_4
+  type: hysteria
+  server: 195.154.200.40
+  port: 15010
+  ports: 15010
+  auth_str: dongtaiwang.com
+  up: 1000
+  down: 1000
+  fast-open: true
+  protocol: udp
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: Unknown_hy_5
+  type: hysteria
+  server: 62.210.10.186
+  port: 40099
+  ports: 40099
+  auth_str: dongtaiwang.com
+  up: 1000
+  down: 1000
+  fast-open: true
+  protocol: udp
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: Unknown_hy_6
+  type: hysteria
+  server: 51.159.226.1
+  port: 49003
+  ports: 49003
+  auth_str: dongtaiwang.com
+  up: 1000
+  down: 1000
+  fast-open: true
+  protocol: udp
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: Unknown_hy_7
+  type: hysteria
+  server: '[2604'
+  port: 6600
+  ports: 6600
+  auth_str: dongtaiwang.com
+  up: 1000
+  down: 1000
+  fast-open: true
+  protocol: udp
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
 - name: Unknown_hy2_0
   type: hysteria2
   server: '[2604'
@@ -359,6 +415,10 @@ proxy-groups:
   - Unknown_hy_1
   - Unknown_hy_2
   - Unknown_hy_3
+  - Unknown_hy_4
+  - Unknown_hy_5
+  - Unknown_hy_6
+  - Unknown_hy_7
   - Unknown_hy2_0
   - Unknown_hy2_1
   - Unknown_hy2_2
@@ -390,6 +450,10 @@ proxy-groups:
   - Unknown_hy_1
   - Unknown_hy_2
   - Unknown_hy_3
+  - Unknown_hy_4
+  - Unknown_hy_5
+  - Unknown_hy_6
+  - Unknown_hy_7
   - Unknown_hy2_0
   - Unknown_hy2_1
   - Unknown_hy2_2

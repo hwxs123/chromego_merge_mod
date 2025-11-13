@@ -251,18 +251,6 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: Unknown_hysteria_81
-  type: hysteria
-  server: 62.210.10.140
-  port: 42248
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
 - name: Unknown_hy_0
   type: hysteria
   server: 62.210.10.186
@@ -375,7 +363,6 @@ proxy-groups:
   - Unknown_tuic_53
   - Unknown_tuic_54
   - Unknown_tuic_55
-  - Unknown_hysteria_81
   - Unknown_hy_0
   - Unknown_hy_1
   - Unknown_hy_2
@@ -408,7 +395,6 @@ proxy-groups:
   - Unknown_tuic_53
   - Unknown_tuic_54
   - Unknown_tuic_55
-  - Unknown_hysteria_81
   - Unknown_hy_0
   - Unknown_hy_1
   - Unknown_hy_2

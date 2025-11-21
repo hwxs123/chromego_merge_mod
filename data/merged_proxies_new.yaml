@@ -255,20 +255,6 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: Unknown_anytls_71
-  type: anytls
-  server: 62.210.10.140
-  port: 8443
-  password: dongtaiwang.com
-  client-fingerprint: chrome
-  udp: true
-  idle-session-check-interval: 30
-  idle-session-timeout: 30
-  min-idle-session: 0
-  alpn:
-  - h2
-  - http/1.1
-  skip-cert-verify: true
 - name: Unknown_hysteria_81
   type: hysteria
   server: 62.210.10.140
@@ -361,10 +347,10 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: Unknown_hy2_4
+- name: Unknown_hy2_7
   type: hysteria2
-  server: 163.172.21.105
-  port: 5355
+  server: 51.158.218.2
+  port: 50066
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -393,7 +379,6 @@ proxy-groups:
   - Unknown_tuic_53
   - Unknown_tuic_54
   - Unknown_tuic_55
-  - Unknown_anytls_71
   - Unknown_hysteria_81
   - Unknown_hy_0
   - Unknown_hy_1
@@ -402,7 +387,7 @@ proxy-groups:
   - Unknown_hy2_0
   - Unknown_hy2_1
   - Unknown_hy2_2
-  - Unknown_hy2_4
+  - Unknown_hy2_7
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -427,7 +412,6 @@ proxy-groups:
   - Unknown_tuic_53
   - Unknown_tuic_54
   - Unknown_tuic_55
-  - Unknown_anytls_71
   - Unknown_hysteria_81
   - Unknown_hy_0
   - Unknown_hy_1
@@ -436,7 +420,7 @@ proxy-groups:
   - Unknown_hy2_0
   - Unknown_hy2_1
   - Unknown_hy2_2
-  - Unknown_hy2_4
+  - Unknown_hy2_7
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT

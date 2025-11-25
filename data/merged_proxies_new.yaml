@@ -318,6 +318,22 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
+- name: Unknown_vless_91
+  type: vless
+  server: 2001:bc8:32d7:158::5
+  port: 10033
+  uuid: 56618bde-5a09-4ef8-ae56-6e7a8d69ec67
+  network: grpc
+  udp: true
+  tls: true
+  flow: null
+  servername: nijigen-works.jp
+  reality-opts:
+    public-key: m1ORavmKKsF8kn6JfNF1m35wRORu8c6YLyxpSfyiYQ0
+    short-id: dfdfb0e2e2d400c4
+  grpc-opts:
+    grpc-service-name: FhwHiFzK
+  client-fingerprint: chrome
 - name: Unknown_hy_0
   type: hysteria
   server: 62.210.10.186
@@ -374,20 +390,6 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: Unknown_hy_6
-  type: hysteria
-  server: 51.159.226.1
-  port: 49003
-  ports: 49003
-  auth_str: dongtaiwang.com
-  up: 1000
-  down: 1000
-  fast-open: true
-  protocol: udp
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
 - name: Unknown_hy2_0
   type: hysteria2
   server: '[2604'
@@ -408,14 +410,6 @@ proxies:
   type: hysteria2
   server: 163.172.21.105
   port: 5355
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: Unknown_hy2_5
-  type: hysteria2
-  server: '[2604'
-  port: 6600
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -449,15 +443,14 @@ proxy-groups:
   - Unknown_hysteria_63
   - Unknown_hysteria_64
   - Unknown_hysteria_65
+  - Unknown_vless_91
   - Unknown_hy_0
   - Unknown_hy_1
   - Unknown_hy_2
   - Unknown_hy_3
-  - Unknown_hy_6
   - Unknown_hy2_0
   - Unknown_hy2_1
   - Unknown_hy2_2
-  - Unknown_hy2_5
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -487,15 +480,14 @@ proxy-groups:
   - Unknown_hysteria_63
   - Unknown_hysteria_64
   - Unknown_hysteria_65
+  - Unknown_vless_91
   - Unknown_hy_0
   - Unknown_hy_1
   - Unknown_hy_2
   - Unknown_hy_3
-  - Unknown_hy_6
   - Unknown_hy2_0
   - Unknown_hy2_1
   - Unknown_hy2_2
-  - Unknown_hy2_5
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT

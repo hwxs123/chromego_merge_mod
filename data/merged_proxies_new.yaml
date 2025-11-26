@@ -255,69 +255,6 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: Unknown_tuic_61
-  server: 51.159.107.20
-  port: 55255
-  type: tuic
-  uuid: 79529c4a-4028-4701-a6d6-4e94b78b50fd
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  sni: bing.com
-  skip-cert-verify: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
-- name: Unknown_anytls_62
-  type: anytls
-  server: 62.210.11.74
-  port: 8443
-  password: dongtaiwang.com
-  client-fingerprint: chrome
-  udp: true
-  idle-session-check-interval: 30
-  idle-session-timeout: 30
-  min-idle-session: 0
-  alpn:
-  - h2
-  - http/1.1
-  skip-cert-verify: true
-- name: Unknown_hysteria_63
-  type: hysteria
-  server: 51.159.107.20
-  port: 20001
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: Unknown_hysteria_64
-  type: hysteria
-  server: 2001:bc8:1203:25::3
-  port: 20001
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: Unknown_hysteria_65
-  type: hysteria
-  server: 2001:bc8:1203:25::4
-  port: 20001
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
 - name: Unknown_vless_91
   type: vless
   server: 2001:bc8:32d7:158::5
@@ -334,6 +271,71 @@ proxies:
   grpc-opts:
     grpc-service-name: FhwHiFzK
   client-fingerprint: chrome
+- name: Unknown_tuic_101
+  server: 2001:bc8:1203:106::100
+  port: 55111
+  type: tuic
+  uuid: 5ae31731-78ac-483a-b524-011d05072ef5
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: Unknown_tuic_102
+  server: 2001:bc8:1203:106::101
+  port: 55111
+  type: tuic
+  uuid: 5ae31731-78ac-483a-b524-011d05072ef5
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: Unknown_tuic_103
+  server: 2001:bc8:1203:106::102
+  port: 55111
+  type: tuic
+  uuid: 5ae31731-78ac-483a-b524-011d05072ef5
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: Unknown_tuic_104
+  server: 2001:bc8:1203:106::103
+  port: 55111
+  type: tuic
+  uuid: 5ae31731-78ac-483a-b524-011d05072ef5
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
+- name: Unknown_tuic_105
+  server: 2001:bc8:1203:106::104
+  port: 55111
+  type: tuic
+  uuid: 5ae31731-78ac-483a-b524-011d05072ef5
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: bing.com
+  skip-cert-verify: true
+  reduce-rtt: true
+  udp-relay-mode: native
+  congestion-controller: bbr
 - name: Unknown_hy_0
   type: hysteria
   server: 62.210.10.186
@@ -390,6 +392,48 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
+- name: Unknown_hy_4
+  type: hysteria
+  server: 195.154.200.40
+  port: 15010
+  ports: 15010
+  auth_str: dongtaiwang.com
+  up: 1000
+  down: 1000
+  fast-open: true
+  protocol: udp
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: Unknown_hy_6
+  type: hysteria
+  server: 51.159.226.1
+  port: 49003
+  ports: 49003
+  auth_str: dongtaiwang.com
+  up: 1000
+  down: 1000
+  fast-open: true
+  protocol: udp
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: Unknown_hy_7
+  type: hysteria
+  server: '[2604'
+  port: 6600
+  ports: 6600
+  auth_str: dongtaiwang.com
+  up: 1000
+  down: 1000
+  fast-open: true
+  protocol: udp
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
 - name: Unknown_hy2_0
   type: hysteria2
   server: '[2604'
@@ -410,6 +454,22 @@ proxies:
   type: hysteria2
   server: 163.172.21.105
   port: 5355
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: Unknown_hy2_4
+  type: hysteria2
+  server: 163.172.21.105
+  port: 5355
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: Unknown_hy2_5
+  type: hysteria2
+  server: '[2604'
+  port: 6600
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -438,19 +498,24 @@ proxy-groups:
   - Unknown_tuic_53
   - Unknown_tuic_54
   - Unknown_tuic_55
-  - Unknown_tuic_61
-  - Unknown_anytls_62
-  - Unknown_hysteria_63
-  - Unknown_hysteria_64
-  - Unknown_hysteria_65
   - Unknown_vless_91
+  - Unknown_tuic_101
+  - Unknown_tuic_102
+  - Unknown_tuic_103
+  - Unknown_tuic_104
+  - Unknown_tuic_105
   - Unknown_hy_0
   - Unknown_hy_1
   - Unknown_hy_2
   - Unknown_hy_3
+  - Unknown_hy_4
+  - Unknown_hy_6
+  - Unknown_hy_7
   - Unknown_hy2_0
   - Unknown_hy2_1
   - Unknown_hy2_2
+  - Unknown_hy2_4
+  - Unknown_hy2_5
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -475,19 +540,24 @@ proxy-groups:
   - Unknown_tuic_53
   - Unknown_tuic_54
   - Unknown_tuic_55
-  - Unknown_tuic_61
-  - Unknown_anytls_62
-  - Unknown_hysteria_63
-  - Unknown_hysteria_64
-  - Unknown_hysteria_65
   - Unknown_vless_91
+  - Unknown_tuic_101
+  - Unknown_tuic_102
+  - Unknown_tuic_103
+  - Unknown_tuic_104
+  - Unknown_tuic_105
   - Unknown_hy_0
   - Unknown_hy_1
   - Unknown_hy_2
   - Unknown_hy_3
+  - Unknown_hy_4
+  - Unknown_hy_6
+  - Unknown_hy_7
   - Unknown_hy2_0
   - Unknown_hy2_1
   - Unknown_hy2_2
+  - Unknown_hy2_4
+  - Unknown_hy2_5
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT

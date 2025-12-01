@@ -255,83 +255,6 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: Unknown_tuic_61
-  server: ipv4.758733.xyz
-  port: 50088
-  type: tuic
-  uuid: 93959440-4f83-4352-b939-906b1fd3fa59
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  sni: bing.com
-  skip-cert-verify: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
-- name: Unknown_anytls_62
-  type: anytls
-  server: 62.210.11.74
-  port: 8443
-  password: dongtaiwang.com
-  client-fingerprint: chrome
-  udp: true
-  idle-session-check-interval: 30
-  idle-session-timeout: 30
-  min-idle-session: 0
-  alpn:
-  - h2
-  - http/1.1
-  skip-cert-verify: true
-- name: Unknown_hysteria_63
-  type: hysteria
-  server: ipv4.758733.xyz
-  port: 20001
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: Unknown_hysteria_64
-  type: hysteria
-  server: 2001:bc8:32d7:402::3
-  port: 20001
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: Unknown_hysteria_65
-  type: hysteria
-  server: 2001:bc8:32d7:402::4
-  port: 20001
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: Unknown_anytls_71
-  type: anytls
-  server: 62.210.10.140
-  port: 8443
-  password: dongtaiwang.com
-  client-fingerprint: chrome
-  udp: true
-  idle-session-check-interval: 30
-  idle-session-timeout: 30
-  min-idle-session: 0
-  alpn:
-  - h2
-  - http/1.1
-  skip-cert-verify: true
 - name: Unknown_hy_0
   type: hysteria
   server: 62.210.10.186
@@ -379,20 +302,6 @@ proxies:
   server: 51.159.226.1
   port: 49003
   ports: 49003
-  auth_str: dongtaiwang.com
-  up: 1000
-  down: 1000
-  fast-open: true
-  protocol: udp
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-- name: Unknown_hy_4
-  type: hysteria
-  server: 195.154.200.40
-  port: 15010
-  ports: 15010
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -450,17 +359,10 @@ proxy-groups:
   - Unknown_tuic_53
   - Unknown_tuic_54
   - Unknown_tuic_55
-  - Unknown_tuic_61
-  - Unknown_anytls_62
-  - Unknown_hysteria_63
-  - Unknown_hysteria_64
-  - Unknown_hysteria_65
-  - Unknown_anytls_71
   - Unknown_hy_0
   - Unknown_hy_1
   - Unknown_hy_2
   - Unknown_hy_3
-  - Unknown_hy_4
   - Unknown_hy2_0
   - Unknown_hy2_1
   - Unknown_hy2_2
@@ -488,17 +390,10 @@ proxy-groups:
   - Unknown_tuic_53
   - Unknown_tuic_54
   - Unknown_tuic_55
-  - Unknown_tuic_61
-  - Unknown_anytls_62
-  - Unknown_hysteria_63
-  - Unknown_hysteria_64
-  - Unknown_hysteria_65
-  - Unknown_anytls_71
   - Unknown_hy_0
   - Unknown_hy_1
   - Unknown_hy_2
   - Unknown_hy_3
-  - Unknown_hy_4
   - Unknown_hy2_0
   - Unknown_hy2_1
   - Unknown_hy2_2

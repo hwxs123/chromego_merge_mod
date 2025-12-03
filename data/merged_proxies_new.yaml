@@ -27,8 +27,8 @@ dns:
 proxies:
 - name: Unknown_anytls_01
   type: anytls
-  server: 62.210.10.140
-  port: 8443
+  server: 45.221.98.14
+  port: 59901
   password: dongtaiwang.com
   client-fingerprint: chrome
   udp: true
@@ -263,30 +263,6 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: Unknown_vless_91
-  type: vless
-  server: 2a14:7583:2977::a
-  port: 10494
-  uuid: 9328c397-1485-4bd0-a214-cae442ae828c
-  network: tcp
-  udp: true
-  tls: true
-  flow: null
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: LdkOYdsF39LEUZ9pQgQX1ql_UjMjmn308EMs-n27cEQ
-    short-id: 7e5f09e994395f10
-  smux:
-    enabled: true
-    protocol: h2mux
-    max-connections: 1
-    min-streams: 4
-    padding: true
-    brutal-opts:
-      enabled: true
-      up: 50
-      down: 100
 - name: Unknown_tuic_101
   server: 2001:bc8:1203:106::100
   port: 55111
@@ -408,11 +384,11 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: Unknown_hy_6
+- name: Unknown_hy_4
   type: hysteria
-  server: 51.159.226.1
-  port: 49003
-  ports: 49003
+  server: 195.154.200.40
+  port: 15010
+  ports: 15010
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -470,7 +446,6 @@ proxy-groups:
   - Unknown_tuic_53
   - Unknown_tuic_54
   - Unknown_tuic_55
-  - Unknown_vless_91
   - Unknown_tuic_101
   - Unknown_tuic_102
   - Unknown_tuic_103
@@ -480,7 +455,7 @@ proxy-groups:
   - Unknown_hy_1
   - Unknown_hy_2
   - Unknown_hy_3
-  - Unknown_hy_6
+  - Unknown_hy_4
   - Unknown_hy2_0
   - Unknown_hy2_1
   - Unknown_hy2_2
@@ -508,7 +483,6 @@ proxy-groups:
   - Unknown_tuic_53
   - Unknown_tuic_54
   - Unknown_tuic_55
-  - Unknown_vless_91
   - Unknown_tuic_101
   - Unknown_tuic_102
   - Unknown_tuic_103
@@ -518,7 +492,7 @@ proxy-groups:
   - Unknown_hy_1
   - Unknown_hy_2
   - Unknown_hy_3
-  - Unknown_hy_6
+  - Unknown_hy_4
   - Unknown_hy2_0
   - Unknown_hy2_1
   - Unknown_hy2_2

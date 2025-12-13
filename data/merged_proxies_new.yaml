@@ -319,9 +319,9 @@ proxies:
       down: 100
 - name: Unknown_hy_0
   type: hysteria
-  server: 62.210.10.186
-  port: 40099
-  ports: 40099
+  server: 5.83.129.248
+  port: 56701
+  ports: 56701
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -347,9 +347,9 @@ proxies:
   - h3
 - name: Unknown_hy_2
   type: hysteria
-  server: 5.83.129.248
-  port: 10023
-  ports: 10023
+  server: 51.159.107.20
+  port: 40121
+  ports: 40121
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -373,11 +373,11 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: Unknown_hy_5
+- name: Unknown_hy_4
   type: hysteria
-  server: 5.83.129.248
-  port: 56701
-  ports: 56701
+  server: 51.159.107.20
+  port: 40121
+  ports: 40121
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -387,25 +387,11 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: Unknown_hy_6
+- name: Unknown_hy_5
   type: hysteria
-  server: 62.210.127.177
-  port: 23880
-  ports: 23880
-  auth_str: dongtaiwang.com
-  up: 1000
-  down: 1000
-  fast-open: true
-  protocol: udp
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-- name: Unknown_hy_7
-  type: hysteria
-  server: '[2604'
-  port: 6600
-  ports: 6600
+  server: 51.159.107.20
+  port: 40121
+  ports: 40121
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -439,14 +425,6 @@ proxies:
   fast-open: true
   sni: www.microsoft.com
   skip-cert-verify: true
-- name: Unknown_hy2_4
-  type: hysteria2
-  server: 51.158.194.63
-  port: 32952
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.microsoft.com
-  skip-cert-verify: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -473,13 +451,11 @@ proxy-groups:
   - Unknown_hy_1
   - Unknown_hy_2
   - Unknown_hy_3
+  - Unknown_hy_4
   - Unknown_hy_5
-  - Unknown_hy_6
-  - Unknown_hy_7
   - Unknown_hy2_0
   - Unknown_hy2_1
   - Unknown_hy2_2
-  - Unknown_hy2_4
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -506,13 +482,11 @@ proxy-groups:
   - Unknown_hy_1
   - Unknown_hy_2
   - Unknown_hy_3
+  - Unknown_hy_4
   - Unknown_hy_5
-  - Unknown_hy_6
-  - Unknown_hy_7
   - Unknown_hy2_0
   - Unknown_hy2_1
   - Unknown_hy2_2
-  - Unknown_hy2_4
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT

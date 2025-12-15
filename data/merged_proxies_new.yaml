@@ -75,16 +75,15 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_hysteria_31
-  type: hysteria
-  server: ipv4-2.758733.xyz
-  port: 30077
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
+- name: Unknown_hysteria2_31
+  type: hysteria2
+  server: 51.158.194.63
+  port: 32952
+  password: dongtaiwang.com
   alpn:
   - h3
-  protocol: udp
+  sni: www.microsoft.com
+  skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
 - name: Unknown_vless_32
@@ -245,12 +244,71 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: Unknown_hysteria_111
+- name: Unknown_hysteria2_61
+  type: hysteria2
+  server: 51.158.194.63
+  port: 32952
+  password: dongtaiwang.com
+  alpn:
+  - h3
+  sni: www.microsoft.com
+  skip-cert-verify: true
+  up: 11 Mbps
+  down: 55 Mbps
+- name: Unknown_vless_62
+  type: vless
+  server: 195.154.200.13
+  port: 17401
+  uuid: add14a5b-f648-4423-8a1f-8b8f54c0daef
+  network: tcp
+  udp: true
+  tls: true
+  flow: null
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: IXcXrT_Y0ATTZlGOhPnSmKo-cuGr4yMKV9Rz4-nA3yU
+    short-id: 8ef4455ba637425b
+  smux:
+    enabled: true
+    protocol: h2mux
+    max-connections: 1
+    min-streams: 4
+    padding: true
+    brutal-opts:
+      enabled: true
+      up: 50
+      down: 100
+- name: Unknown_hysteria_63
   type: hysteria
-  server: 2001:bc8:32d7:14f::4
-  port: 23880
+  server: ipv4.758733.xyz
+  port: 20001
   auth-str: dongtaiwang.com
-  sni: bing.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: Unknown_hysteria_64
+  type: hysteria
+  server: 2001:bc8:32d7:402::3
+  port: 20001
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: Unknown_hysteria_65
+  type: hysteria
+  server: 2001:bc8:32d7:402::4
+  port: 20001
+  auth-str: dongtaiwang.com
+  sni: apple.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -313,34 +371,6 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: Unknown_hy_4
-  type: hysteria
-  server: 89.144.35.231
-  port: 10023
-  ports: 10023
-  auth_str: dongtaiwang.com
-  up: 1000
-  down: 1000
-  fast-open: true
-  protocol: udp
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-- name: Unknown_hy_7
-  type: hysteria
-  server: '[2604'
-  port: 6600
-  ports: 6600
-  auth_str: dongtaiwang.com
-  up: 1000
-  down: 1000
-  fast-open: true
-  protocol: udp
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
 - name: Unknown_hy2_0
   type: hysteria2
   server: '[2604'
@@ -365,14 +395,6 @@ proxies:
   fast-open: true
   sni: www.microsoft.com
   skip-cert-verify: true
-- name: Unknown_hy2_5
-  type: hysteria2
-  server: '[2604'
-  port: 6600
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.bing.com
-  skip-cert-verify: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -382,7 +404,7 @@ proxy-groups:
   - Unknown_anytls_01
   - Unknown_vless_11
   - Unknown_hysteria_21
-  - Unknown_hysteria_31
+  - Unknown_hysteria2_31
   - Unknown_vless_32
   - Unknown_hysteria_33
   - Unknown_hysteria_34
@@ -392,17 +414,18 @@ proxy-groups:
   - Unknown_vless_43
   - Unknown_tuic_51
   - Unknown_tuic_52
-  - Unknown_hysteria_111
+  - Unknown_hysteria2_61
+  - Unknown_vless_62
+  - Unknown_hysteria_63
+  - Unknown_hysteria_64
+  - Unknown_hysteria_65
   - Unknown_hy_0
   - Unknown_hy_1
   - Unknown_hy_2
   - Unknown_hy_3
-  - Unknown_hy_4
-  - Unknown_hy_7
   - Unknown_hy2_0
   - Unknown_hy2_1
   - Unknown_hy2_2
-  - Unknown_hy2_5
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -412,7 +435,7 @@ proxy-groups:
   - Unknown_anytls_01
   - Unknown_vless_11
   - Unknown_hysteria_21
-  - Unknown_hysteria_31
+  - Unknown_hysteria2_31
   - Unknown_vless_32
   - Unknown_hysteria_33
   - Unknown_hysteria_34
@@ -422,17 +445,18 @@ proxy-groups:
   - Unknown_vless_43
   - Unknown_tuic_51
   - Unknown_tuic_52
-  - Unknown_hysteria_111
+  - Unknown_hysteria2_61
+  - Unknown_vless_62
+  - Unknown_hysteria_63
+  - Unknown_hysteria_64
+  - Unknown_hysteria_65
   - Unknown_hy_0
   - Unknown_hy_1
   - Unknown_hy_2
   - Unknown_hy_3
-  - Unknown_hy_4
-  - Unknown_hy_7
   - Unknown_hy2_0
   - Unknown_hy2_1
   - Unknown_hy2_2
-  - Unknown_hy2_5
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT

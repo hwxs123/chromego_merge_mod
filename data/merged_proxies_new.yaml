@@ -301,20 +301,6 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: Unknown_hy_4
-  type: hysteria
-  server: 89.144.35.231
-  port: 10023
-  ports: 10023
-  auth_str: dongtaiwang.com
-  up: 1000
-  down: 1000
-  fast-open: true
-  protocol: udp
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
 - name: Unknown_hy2_0
   type: hysteria2
   server: '[2604'
@@ -339,6 +325,22 @@ proxies:
   fast-open: true
   sni: apple.com
   skip-cert-verify: true
+- name: Unknown_hy2_4
+  type: hysteria2
+  server: 5.178.101.106
+  port: 11000
+  password: dongtaiwang.com
+  fast-open: true
+  sni: apple.com
+  skip-cert-verify: true
+- name: Unknown_hy2_7
+  type: hysteria2
+  server: 51.158.194.63
+  port: 32952
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.microsoft.com
+  skip-cert-verify: true
 proxy-groups:
 - name: 节点选择
   type: select
@@ -362,10 +364,11 @@ proxy-groups:
   - Unknown_hy_1
   - Unknown_hy_2
   - Unknown_hy_3
-  - Unknown_hy_4
   - Unknown_hy2_0
   - Unknown_hy2_1
   - Unknown_hy2_2
+  - Unknown_hy2_4
+  - Unknown_hy2_7
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -389,10 +392,11 @@ proxy-groups:
   - Unknown_hy_1
   - Unknown_hy_2
   - Unknown_hy_3
-  - Unknown_hy_4
   - Unknown_hy2_0
   - Unknown_hy2_1
   - Unknown_hy2_2
+  - Unknown_hy2_4
+  - Unknown_hy2_7
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT

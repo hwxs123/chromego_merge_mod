@@ -25,56 +25,6 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: Unknown_anytls_01
-  type: anytls
-  server: 45.221.98.14
-  port: 59901
-  password: dongtaiwang.com
-  client-fingerprint: chrome
-  udp: true
-  idle-session-check-interval: 30
-  idle-session-timeout: 30
-  min-idle-session: 0
-  alpn:
-  - h2
-  - http/1.1
-  skip-cert-verify: true
-- name: Unknown_vless_11
-  type: vless
-  server: 2001:bc8:32d7:1cb::10
-  port: 12618
-  uuid: 582d6615-b8a3-4674-96c1-5b087563b091
-  network: tcp
-  udp: true
-  tls: true
-  flow: null
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: Y3mEtIPC1rjwUrwJ4UsqX6QeZnJUoBN6hG2rRSQx4Rw
-    short-id: 8c4e4d7198e3631c
-  smux:
-    enabled: true
-    protocol: h2mux
-    max-connections: 1
-    min-streams: 4
-    padding: true
-    brutal-opts:
-      enabled: true
-      up: 50
-      down: 100
-- name: Unknown_hysteria_21
-  type: hysteria
-  server: 2001:bc8:32d7:14f::4
-  port: 23880
-  auth-str: dongtaiwang.com
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
 - name: Unknown_hysteria_31
   type: hysteria
   server: 5.178.101.33
@@ -245,20 +195,6 @@ proxies:
   reduce-rtt: true
   udp-relay-mode: native
   congestion-controller: bbr
-- name: Unknown_hy_1
-  type: hysteria
-  server: '[2604'
-  port: 6600
-  ports: 6600
-  auth_str: dongtaiwang.com
-  up: 1000
-  down: 1000
-  fast-open: true
-  protocol: udp
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
 - name: Unknown_hy_2
   type: hysteria
   server: 89.144.35.231
@@ -287,22 +223,6 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: Unknown_hy2_0
-  type: hysteria2
-  server: '[2604'
-  port: 6600
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: Unknown_hy2_1
-  type: hysteria2
-  server: 51.158.194.63
-  port: 32952
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.microsoft.com
-  skip-cert-verify: true
 - name: Unknown_hy2_2
   type: hysteria2
   server: 5.178.101.106
@@ -317,9 +237,6 @@ proxy-groups:
   proxies:
   - 自动选择
   - DIRECT
-  - Unknown_anytls_01
-  - Unknown_vless_11
-  - Unknown_hysteria_21
   - Unknown_hysteria_31
   - Unknown_vless_32
   - Unknown_hysteria_33
@@ -330,11 +247,8 @@ proxy-groups:
   - Unknown_vless_43
   - Unknown_tuic_51
   - Unknown_tuic_52
-  - Unknown_hy_1
   - Unknown_hy_2
   - Unknown_hy_3
-  - Unknown_hy2_0
-  - Unknown_hy2_1
   - Unknown_hy2_2
 - name: 自动选择
   type: url-test
@@ -342,9 +256,6 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - Unknown_anytls_01
-  - Unknown_vless_11
-  - Unknown_hysteria_21
   - Unknown_hysteria_31
   - Unknown_vless_32
   - Unknown_hysteria_33
@@ -355,11 +266,8 @@ proxy-groups:
   - Unknown_vless_43
   - Unknown_tuic_51
   - Unknown_tuic_52
-  - Unknown_hy_1
   - Unknown_hy_2
   - Unknown_hy_3
-  - Unknown_hy2_0
-  - Unknown_hy2_1
   - Unknown_hy2_2
 rules:
 - DOMAIN,clash.razord.top,DIRECT

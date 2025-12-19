@@ -225,6 +225,14 @@ proxies:
   - h3
 - name: Unknown_hy2_2
   type: hysteria2
+  server: 157.254.223.43
+  port: 27921
+  password: dongtaiwang.com
+  fast-open: true
+  sni: apple.com
+  skip-cert-verify: true
+- name: Unknown_hy2_3
+  type: hysteria2
   server: 5.178.101.106
   port: 11000
   password: dongtaiwang.com
@@ -250,6 +258,7 @@ proxy-groups:
   - Unknown_hy_2
   - Unknown_hy_3
   - Unknown_hy2_2
+  - Unknown_hy2_3
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -269,6 +278,7 @@ proxy-groups:
   - Unknown_hy_2
   - Unknown_hy_3
   - Unknown_hy2_2
+  - Unknown_hy2_3
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT

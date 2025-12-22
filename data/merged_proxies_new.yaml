@@ -233,11 +233,11 @@ proxies:
   skip-cert-verify: true
 - name: Unknown_hy2_3
   type: hysteria2
-  server: 5.178.101.106
-  port: 11000
+  server: 62.210.124.146
+  port: 22000
   password: dongtaiwang.com
   fast-open: true
-  sni: apple.com
+  sni: www.microsoft.com
   skip-cert-verify: true
 proxy-groups:
 - name: 节点选择

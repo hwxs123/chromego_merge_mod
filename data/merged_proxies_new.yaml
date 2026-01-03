@@ -27,6 +27,18 @@ dns:
 proxies:
 - name: Unknown_hysteria_01
   type: hysteria
+  server: 89.144.35.30
+  port: 23008
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: Unknown_hysteria_02
+  type: hysteria
   server: 5.178.101.33
   port: 23008
   auth-str: dongtaiwang.com
@@ -37,7 +49,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_vless_02
+- name: Unknown_vless_03
   type: vless
   server: 195.154.200.13
   port: 17401
@@ -61,18 +73,6 @@ proxies:
       enabled: true
       up: 50
       down: 100
-- name: Unknown_hysteria_03
-  type: hysteria
-  server: ipv4.758733.xyz
-  port: 20001
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
 - name: Unknown_hysteria_04
   type: hysteria
   server: 2001:bc8:32d7:402::3
@@ -230,6 +230,18 @@ proxies:
   down: 55 Mbps
 - name: Unknown_hysteria_61
   type: hysteria
+  server: 89.144.35.30
+  port: 23008
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: Unknown_hysteria_62
+  type: hysteria
   server: 5.178.101.33
   port: 23008
   auth-str: dongtaiwang.com
@@ -240,7 +252,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_vless_62
+- name: Unknown_vless_63
   type: vless
   server: 195.154.200.13
   port: 17401
@@ -264,18 +276,6 @@ proxies:
       enabled: true
       up: 50
       down: 100
-- name: Unknown_hysteria_63
-  type: hysteria
-  server: ipv4.758733.xyz
-  port: 20001
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
 - name: Unknown_hysteria_64
   type: hysteria
   server: 2001:bc8:32d7:402::3
@@ -614,8 +614,8 @@ proxy-groups:
   - 自动选择
   - DIRECT
   - Unknown_hysteria_01
-  - Unknown_vless_02
-  - Unknown_hysteria_03
+  - Unknown_hysteria_02
+  - Unknown_vless_03
   - Unknown_hysteria_04
   - Unknown_hysteria_05
   - Unknown_anytls_11
@@ -627,8 +627,8 @@ proxy-groups:
   - Unknown_tuic_42
   - Unknown_hysteria_51
   - Unknown_hysteria_61
-  - Unknown_vless_62
-  - Unknown_hysteria_63
+  - Unknown_hysteria_62
+  - Unknown_vless_63
   - Unknown_hysteria_64
   - Unknown_hysteria_65
   - Unknown_anytls_71
@@ -662,8 +662,8 @@ proxy-groups:
   tolerance: 50
   proxies:
   - Unknown_hysteria_01
-  - Unknown_vless_02
-  - Unknown_hysteria_03
+  - Unknown_hysteria_02
+  - Unknown_vless_03
   - Unknown_hysteria_04
   - Unknown_hysteria_05
   - Unknown_anytls_11
@@ -675,8 +675,8 @@ proxy-groups:
   - Unknown_tuic_42
   - Unknown_hysteria_51
   - Unknown_hysteria_61
-  - Unknown_vless_62
-  - Unknown_hysteria_63
+  - Unknown_hysteria_62
+  - Unknown_vless_63
   - Unknown_hysteria_64
   - Unknown_hysteria_65
   - Unknown_anytls_71

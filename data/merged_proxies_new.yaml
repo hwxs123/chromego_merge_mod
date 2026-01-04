@@ -433,7 +433,7 @@ proxies:
   down: 55 Mbps
 - name: Unknown_hy_0
   type: hysteria
-  server: 5.178.101.106
+  server: 89.144.35.34
   port: 39228
   ports: 39228
   auth_str: dongtaiwang.com
@@ -489,7 +489,7 @@ proxies:
   - h3
 - name: Unknown_hy_4
   type: hysteria
-  server: 5.178.101.106
+  server: 89.144.35.34
   port: 39228
   ports: 39228
   auth_str: dongtaiwang.com

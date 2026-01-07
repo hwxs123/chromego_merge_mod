@@ -218,10 +218,10 @@ proxies:
   congestion-controller: bbr
 - name: Unknown_hysteria_51
   type: hysteria
-  server: 2001:bc8:32d7:14f::4
-  port: 23880
+  server: 2a14:7584:d097::a
+  port: 54177
   auth-str: dongtaiwang.com
-  sni: bing.com
+  sni: apple.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -421,10 +421,10 @@ proxies:
   congestion-controller: bbr
 - name: Unknown_hysteria_111
   type: hysteria
-  server: 2001:bc8:32d7:14f::4
-  port: 23880
+  server: 2a14:7584:d097::a
+  port: 54177
   auth-str: dongtaiwang.com
-  sni: bing.com
+  sni: apple.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -511,8 +511,8 @@ proxies:
   down: 55 Mbps
 - name: Unknown_hysteria_141
   type: hysteria
-  server: 2001:bc8:32d7:14f::4
-  port: 23880
+  server: 2a14:7584:d097::a
+  port: 54177
   auth-str: dongtaiwang.com
   sni: bing.com
   skip-cert-verify: true
@@ -615,8 +615,8 @@ proxies:
   down: 55 Mbps
 - name: Unknown_hysteria_181
   type: hysteria
-  server: 2001:bc8:32d7:14f::4
-  port: 23880
+  server: 2a14:7584:d097::a
+  port: 54177
   auth-str: dongtaiwang.com
   sni: bing.com
   skip-cert-verify: true
@@ -669,15 +669,15 @@ proxies:
   - h3
 - name: Unknown_hy_2
   type: hysteria
-  server: 62.210.127.177
-  port: 23880
-  ports: 23880
+  server: 5.83.129.90
+  port: 54177
+  ports: 54177
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
   fast-open: true
   protocol: udp
-  sni: bing.com
+  sni: apple.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -725,15 +725,15 @@ proxies:
   - h3
 - name: Unknown_hy_6
   type: hysteria
-  server: 62.210.127.177
-  port: 23880
-  ports: 23880
+  server: 5.83.129.90
+  port: 54177
+  ports: 54177
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
   fast-open: true
   protocol: udp
-  sni: bing.com
+  sni: apple.com
   skip-cert-verify: true
   alpn:
   - h3

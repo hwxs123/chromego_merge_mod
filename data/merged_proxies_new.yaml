@@ -431,72 +431,78 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_tuic_121
-  server: 62.210.10.113
-  port: 33998
-  type: tuic
-  uuid: 909212b8-5d67-4532-885e-7a6b5e724ab8
-  password: dongtaiwang.com
+- name: Unknown_hysteria_121
+  type: hysteria
+  server: 89.144.35.30
+  port: 23008
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
   alpn:
   - h3
-  sni: bing.com
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: Unknown_hysteria_122
+  type: hysteria
+  server: 5.178.101.33
+  port: 23008
+  auth-str: dongtaiwang.com
+  sni: apple.com
   skip-cert-verify: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
-- name: Unknown_anytls_122
-  type: anytls
-  server: fan3.394615.xyz
-  port: 8443
-  password: dongtaiwang.com
-  client-fingerprint: chrome
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: Unknown_vless_123
+  type: vless
+  server: 195.154.200.13
+  port: 17401
+  uuid: add14a5b-f648-4423-8a1f-8b8f54c0daef
+  network: tcp
   udp: true
-  idle-session-check-interval: 30
-  idle-session-timeout: 30
-  min-idle-session: 0
-  alpn:
-  - h2
-  - http/1.1
+  tls: true
+  flow: null
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: IXcXrT_Y0ATTZlGOhPnSmKo-cuGr4yMKV9Rz4-nA3yU
+    short-id: 8ef4455ba637425b
+  smux:
+    enabled: true
+    protocol: h2mux
+    max-connections: 1
+    min-streams: 4
+    padding: true
+    brutal-opts:
+      enabled: true
+      up: 50
+      down: 100
+- name: Unknown_hysteria_124
+  type: hysteria
+  server: 2001:bc8:32d7:402::3
+  port: 20001
+  auth-str: dongtaiwang.com
+  sni: apple.com
   skip-cert-verify: true
-- name: Unknown_tuic_123
-  server: 2001:bc8:32d7:306::124
-  port: 33998
-  type: tuic
-  uuid: 909212b8-5d67-4532-885e-7a6b5e724ab8
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  sni: bing.com
-  skip-cert-verify: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
-- name: Unknown_tuic_124
-  server: 2001:bc8:32d7:306::125
-  port: 33998
-  type: tuic
-  uuid: 909212b8-5d67-4532-885e-7a6b5e724ab8
-  password: dongtaiwang.com
   alpn:
   - h3
-  sni: bing.com
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: Unknown_hysteria_125
+  type: hysteria
+  server: 2001:bc8:32d7:402::4
+  port: 20001
+  auth-str: dongtaiwang.com
+  sni: apple.com
   skip-cert-verify: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
-- name: Unknown_tuic_125
-  server: 2001:bc8:32d7:306::126
-  port: 33998
-  type: tuic
-  uuid: 909212b8-5d67-4532-885e-7a6b5e724ab8
-  password: dongtaiwang.com
   alpn:
   - h3
-  sni: bing.com
-  skip-cert-verify: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 - name: Unknown_hysteria_131
   type: hysteria
   server: 208.87.243.151
@@ -535,72 +541,78 @@ proxies:
   - h2
   - http/1.1
   skip-cert-verify: true
-- name: Unknown_tuic_161
-  server: 62.210.10.113
-  port: 33998
-  type: tuic
-  uuid: 909212b8-5d67-4532-885e-7a6b5e724ab8
-  password: dongtaiwang.com
+- name: Unknown_hysteria_161
+  type: hysteria
+  server: 89.144.35.30
+  port: 23008
+  auth-str: dongtaiwang.com
+  sni: apple.com
+  skip-cert-verify: true
   alpn:
   - h3
-  sni: bing.com
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: Unknown_hysteria_162
+  type: hysteria
+  server: 5.178.101.33
+  port: 23008
+  auth-str: dongtaiwang.com
+  sni: apple.com
   skip-cert-verify: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
-- name: Unknown_anytls_162
-  type: anytls
-  server: fan3.394615.xyz
-  port: 8443
-  password: dongtaiwang.com
-  client-fingerprint: chrome
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: Unknown_vless_163
+  type: vless
+  server: 195.154.200.13
+  port: 17401
+  uuid: add14a5b-f648-4423-8a1f-8b8f54c0daef
+  network: tcp
   udp: true
-  idle-session-check-interval: 30
-  idle-session-timeout: 30
-  min-idle-session: 0
-  alpn:
-  - h2
-  - http/1.1
+  tls: true
+  flow: null
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  reality-opts:
+    public-key: IXcXrT_Y0ATTZlGOhPnSmKo-cuGr4yMKV9Rz4-nA3yU
+    short-id: 8ef4455ba637425b
+  smux:
+    enabled: true
+    protocol: h2mux
+    max-connections: 1
+    min-streams: 4
+    padding: true
+    brutal-opts:
+      enabled: true
+      up: 50
+      down: 100
+- name: Unknown_hysteria_164
+  type: hysteria
+  server: 2001:bc8:32d7:402::3
+  port: 20001
+  auth-str: dongtaiwang.com
+  sni: apple.com
   skip-cert-verify: true
-- name: Unknown_tuic_163
-  server: 2001:bc8:32d7:306::124
-  port: 33998
-  type: tuic
-  uuid: 909212b8-5d67-4532-885e-7a6b5e724ab8
-  password: dongtaiwang.com
-  alpn:
-  - h3
-  sni: bing.com
-  skip-cert-verify: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
-- name: Unknown_tuic_164
-  server: 2001:bc8:32d7:306::125
-  port: 33998
-  type: tuic
-  uuid: 909212b8-5d67-4532-885e-7a6b5e724ab8
-  password: dongtaiwang.com
   alpn:
   - h3
-  sni: bing.com
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: Unknown_hysteria_165
+  type: hysteria
+  server: 2001:bc8:32d7:402::4
+  port: 20001
+  auth-str: dongtaiwang.com
+  sni: apple.com
   skip-cert-verify: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
-- name: Unknown_tuic_165
-  server: 2001:bc8:32d7:306::126
-  port: 33998
-  type: tuic
-  uuid: 909212b8-5d67-4532-885e-7a6b5e724ab8
-  password: dongtaiwang.com
   alpn:
   - h3
-  sni: bing.com
-  skip-cert-verify: true
-  reduce-rtt: true
-  udp-relay-mode: native
-  congestion-controller: bbr
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 - name: Unknown_hysteria_171
   type: hysteria
   server: 208.87.243.151
@@ -847,19 +859,19 @@ proxy-groups:
   - Unknown_tuic_101
   - Unknown_tuic_102
   - Unknown_hysteria_111
-  - Unknown_tuic_121
-  - Unknown_anytls_122
-  - Unknown_tuic_123
-  - Unknown_tuic_124
-  - Unknown_tuic_125
+  - Unknown_hysteria_121
+  - Unknown_hysteria_122
+  - Unknown_vless_123
+  - Unknown_hysteria_124
+  - Unknown_hysteria_125
   - Unknown_hysteria_131
   - Unknown_hysteria_141
   - Unknown_anytls_151
-  - Unknown_tuic_161
-  - Unknown_anytls_162
-  - Unknown_tuic_163
-  - Unknown_tuic_164
-  - Unknown_tuic_165
+  - Unknown_hysteria_161
+  - Unknown_hysteria_162
+  - Unknown_vless_163
+  - Unknown_hysteria_164
+  - Unknown_hysteria_165
   - Unknown_hysteria_171
   - Unknown_hysteria_181
   - Unknown_anytls_191
@@ -911,19 +923,19 @@ proxy-groups:
   - Unknown_tuic_101
   - Unknown_tuic_102
   - Unknown_hysteria_111
-  - Unknown_tuic_121
-  - Unknown_anytls_122
-  - Unknown_tuic_123
-  - Unknown_tuic_124
-  - Unknown_tuic_125
+  - Unknown_hysteria_121
+  - Unknown_hysteria_122
+  - Unknown_vless_123
+  - Unknown_hysteria_124
+  - Unknown_hysteria_125
   - Unknown_hysteria_131
   - Unknown_hysteria_141
   - Unknown_anytls_151
-  - Unknown_tuic_161
-  - Unknown_anytls_162
-  - Unknown_tuic_163
-  - Unknown_tuic_164
-  - Unknown_tuic_165
+  - Unknown_hysteria_161
+  - Unknown_hysteria_162
+  - Unknown_vless_163
+  - Unknown_hysteria_164
+  - Unknown_hysteria_165
   - Unknown_hysteria_171
   - Unknown_hysteria_181
   - Unknown_anytls_191

@@ -773,9 +773,9 @@ proxies:
   skip-cert-verify: true
 - name: Unknown_hy2_1
   type: hysteria2
-  server: 157.254.223.43
-  port: 27921
-  password: dongtaiwang.com
+  server: 157.254.223.24
+  port: 30088
+  password: alvin9999.com
   fast-open: true
   sni: apple.com
   skip-cert-verify: true
@@ -805,9 +805,9 @@ proxies:
   skip-cert-verify: true
 - name: Unknown_hy2_5
   type: hysteria2
-  server: 157.254.223.43
-  port: 27921
-  password: dongtaiwang.com
+  server: 157.254.223.24
+  port: 30088
+  password: alvin9999.com
   fast-open: true
   sni: apple.com
   skip-cert-verify: true

@@ -431,16 +431,16 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_hysteria_121
-  type: hysteria
-  server: 89.144.35.30
-  port: 23008
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
+- name: Unknown_hysteria2_121
+  type: hysteria2
+  server: 157.254.223.24
+  port: 30088
+  ports: 31000-32000
+  password: alvin9999.com
   alpn:
   - h3
-  protocol: udp
+  sni: apple.com
+  skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
 - name: Unknown_hysteria_122
@@ -541,16 +541,16 @@ proxies:
   - h2
   - http/1.1
   skip-cert-verify: true
-- name: Unknown_hysteria_161
-  type: hysteria
-  server: 89.144.35.30
-  port: 23008
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
+- name: Unknown_hysteria2_161
+  type: hysteria2
+  server: 157.254.223.24
+  port: 30088
+  ports: 31000-32000
+  password: alvin9999.com
   alpn:
   - h3
-  protocol: udp
+  sni: apple.com
+  skip-cert-verify: true
   up: 11 Mbps
   down: 55 Mbps
 - name: Unknown_hysteria_162
@@ -859,7 +859,7 @@ proxy-groups:
   - Unknown_tuic_101
   - Unknown_tuic_102
   - Unknown_hysteria_111
-  - Unknown_hysteria_121
+  - Unknown_hysteria2_121
   - Unknown_hysteria_122
   - Unknown_vless_123
   - Unknown_hysteria_124
@@ -867,7 +867,7 @@ proxy-groups:
   - Unknown_hysteria_131
   - Unknown_hysteria_141
   - Unknown_anytls_151
-  - Unknown_hysteria_161
+  - Unknown_hysteria2_161
   - Unknown_hysteria_162
   - Unknown_vless_163
   - Unknown_hysteria_164
@@ -923,7 +923,7 @@ proxy-groups:
   - Unknown_tuic_101
   - Unknown_tuic_102
   - Unknown_hysteria_111
-  - Unknown_hysteria_121
+  - Unknown_hysteria2_121
   - Unknown_hysteria_122
   - Unknown_vless_123
   - Unknown_hysteria_124
@@ -931,7 +931,7 @@ proxy-groups:
   - Unknown_hysteria_131
   - Unknown_hysteria_141
   - Unknown_anytls_151
-  - Unknown_hysteria_161
+  - Unknown_hysteria2_161
   - Unknown_hysteria_162
   - Unknown_vless_163
   - Unknown_hysteria_164

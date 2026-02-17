@@ -639,9 +639,9 @@ proxies:
   - h3
 - name: Unknown_hy_1
   type: hysteria
-  server: 98.142.247.21
-  port: 39228
-  ports: 39228
+  server: 5.83.129.153
+  port: 20088
+  ports: 20088
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -695,9 +695,9 @@ proxies:
   - h3
 - name: Unknown_hy_5
   type: hysteria
-  server: 98.142.247.21
-  port: 39228
-  ports: 39228
+  server: 5.83.129.153
+  port: 20088
+  ports: 20088
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000

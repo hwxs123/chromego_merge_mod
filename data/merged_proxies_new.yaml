@@ -25,18 +25,19 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: Unknown_hysteria_01
-  type: hysteria
+- name: Unknown_tuic_01
   server: ip1.758733.xyz
-  port: 23008
-  auth-str: alvin9999.com
+  port: 10088
+  type: tuic
+  uuid: 9bbd1f42-7ae7-4239-bd10-a68de95e3295
+  password: dongtaiwang.com
   sni: apple.com
-  skip-cert-verify: true
   alpn:
   - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
+  request-timeout: 8000
+  udp-relay-mode: native
+  skip-cert-verify: true
+  congestion-controller: bbr
 - name: Unknown_vless_02
   type: vless
   server: 2001:bc8:32d7:181::2
@@ -250,18 +251,19 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_hysteria_61
-  type: hysteria
+- name: Unknown_tuic_61
   server: ip1.758733.xyz
-  port: 23008
-  auth-str: alvin9999.com
+  port: 10088
+  type: tuic
+  uuid: 9bbd1f42-7ae7-4239-bd10-a68de95e3295
+  password: dongtaiwang.com
   sni: apple.com
-  skip-cert-verify: true
   alpn:
   - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
+  request-timeout: 8000
+  udp-relay-mode: native
+  skip-cert-verify: true
+  congestion-controller: bbr
 - name: Unknown_vless_62
   type: vless
   server: 2001:bc8:32d7:181::2
@@ -621,18 +623,19 @@ proxies:
   - h2
   - http/1.1
   skip-cert-verify: true
-- name: Unknown_hysteria_161
-  type: hysteria
+- name: Unknown_tuic_161
   server: ip1.758733.xyz
-  port: 23008
-  auth-str: alvin9999.com
+  port: 10088
+  type: tuic
+  uuid: 9bbd1f42-7ae7-4239-bd10-a68de95e3295
+  password: dongtaiwang.com
   sni: apple.com
-  skip-cert-verify: true
   alpn:
   - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
+  request-timeout: 8000
+  udp-relay-mode: native
+  skip-cert-verify: true
+  congestion-controller: bbr
 - name: Unknown_vless_162
   type: vless
   server: 2001:bc8:32d7:181::2
@@ -949,7 +952,7 @@ proxy-groups:
   proxies:
   - 自动选择
   - DIRECT
-  - Unknown_hysteria_01
+  - Unknown_tuic_01
   - Unknown_vless_02
   - Unknown_vless_03
   - Unknown_vless_04
@@ -961,7 +964,7 @@ proxy-groups:
   - Unknown_mieru_31
   - Unknown_hysteria_41
   - Unknown_hysteria_51
-  - Unknown_hysteria_61
+  - Unknown_tuic_61
   - Unknown_vless_62
   - Unknown_vless_63
   - Unknown_vless_64
@@ -981,7 +984,7 @@ proxy-groups:
   - Unknown_hysteria_131
   - Unknown_hysteria_141
   - Unknown_anytls_151
-  - Unknown_hysteria_161
+  - Unknown_tuic_161
   - Unknown_vless_162
   - Unknown_vless_163
   - Unknown_vless_164
@@ -1011,7 +1014,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - Unknown_hysteria_01
+  - Unknown_tuic_01
   - Unknown_vless_02
   - Unknown_vless_03
   - Unknown_vless_04
@@ -1023,7 +1026,7 @@ proxy-groups:
   - Unknown_mieru_31
   - Unknown_hysteria_41
   - Unknown_hysteria_51
-  - Unknown_hysteria_61
+  - Unknown_tuic_61
   - Unknown_vless_62
   - Unknown_vless_63
   - Unknown_vless_64
@@ -1043,7 +1046,7 @@ proxy-groups:
   - Unknown_hysteria_131
   - Unknown_hysteria_141
   - Unknown_anytls_151
-  - Unknown_hysteria_161
+  - Unknown_tuic_161
   - Unknown_vless_162
   - Unknown_vless_163
   - Unknown_vless_164

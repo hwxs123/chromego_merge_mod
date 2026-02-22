@@ -849,7 +849,7 @@ proxies:
 - name: Unknown_hy2_0
   type: hysteria2
   server: 89.144.35.34
-  port: 50022
+  port: 43608
   password: dongtaiwang.com
   fast-open: true
   sni: apple.com
@@ -881,7 +881,7 @@ proxies:
 - name: Unknown_hy2_4
   type: hysteria2
   server: 89.144.35.34
-  port: 50022
+  port: 43608
   password: dongtaiwang.com
   fast-open: true
   sni: apple.com

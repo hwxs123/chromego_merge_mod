@@ -573,7 +573,21 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_hysteria_141
+- name: Unknown_anytls_141
+  type: anytls
+  server: 151.242.183.75
+  port: 33333
+  password: dongtaiwang.com
+  client-fingerprint: chrome
+  udp: true
+  idle-session-check-interval: 30
+  idle-session-timeout: 30
+  min-idle-session: 0
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: Unknown_hysteria_142
   type: hysteria
   server: 2a14:7584:d097::a
   port: 54177
@@ -708,7 +722,21 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_hysteria_181
+- name: Unknown_anytls_181
+  type: anytls
+  server: 151.242.183.75
+  port: 33333
+  password: dongtaiwang.com
+  client-fingerprint: chrome
+  udp: true
+  idle-session-check-interval: 30
+  idle-session-timeout: 30
+  min-idle-session: 0
+  alpn:
+  - h2
+  - http/1.1
+  skip-cert-verify: true
+- name: Unknown_hysteria_182
   type: hysteria
   server: 2a14:7584:d097::a
   port: 54177
@@ -946,7 +974,8 @@ proxy-groups:
   - Unknown_vless_124
   - Unknown_vless_125
   - Unknown_hysteria_131
-  - Unknown_hysteria_141
+  - Unknown_anytls_141
+  - Unknown_hysteria_142
   - Unknown_anytls_151
   - Unknown_tuic_161
   - Unknown_hysteria_162
@@ -954,7 +983,8 @@ proxy-groups:
   - Unknown_vless_164
   - Unknown_vless_165
   - Unknown_hysteria_171
-  - Unknown_hysteria_181
+  - Unknown_anytls_181
+  - Unknown_hysteria_182
   - Unknown_anytls_191
   - Unknown_hy_0
   - Unknown_hy_1
@@ -1008,7 +1038,8 @@ proxy-groups:
   - Unknown_vless_124
   - Unknown_vless_125
   - Unknown_hysteria_131
-  - Unknown_hysteria_141
+  - Unknown_anytls_141
+  - Unknown_hysteria_142
   - Unknown_anytls_151
   - Unknown_tuic_161
   - Unknown_hysteria_162
@@ -1016,7 +1047,8 @@ proxy-groups:
   - Unknown_vless_164
   - Unknown_vless_165
   - Unknown_hysteria_171
-  - Unknown_hysteria_181
+  - Unknown_anytls_181
+  - Unknown_hysteria_182
   - Unknown_anytls_191
   - Unknown_hy_0
   - Unknown_hy_1

@@ -208,13 +208,19 @@ proxies:
       enabled: true
       up: 50
       down: 100
-- name: Unknown_mieru_31
-  type: mieru
+- name: Unknown_tuic_31
   server: 157.254.223.48
-  port: 33990
-  transport: TCP
-  username: dongtaiwang.com
-  password: dongtaiwang.com
+  port: 11540
+  type: tuic
+  uuid: 6845cb43-4b8d-49e8-a011-1051d6c4d2ae
+  password: 6845cb43-4b8d-49e8-a011-1051d6c4d2ae
+  sni: www.microsoft.com
+  alpn:
+  - h3
+  request-timeout: 8000
+  udp-relay-mode: native
+  skip-cert-verify: true
+  congestion-controller: bbr
 - name: Unknown_hysteria_41
   type: hysteria
   server: 2a14:7584:d097::a
@@ -422,13 +428,19 @@ proxies:
       enabled: true
       up: 50
       down: 100
-- name: Unknown_mieru_91
-  type: mieru
+- name: Unknown_tuic_91
   server: 157.254.223.48
-  port: 33990
-  transport: TCP
-  username: dongtaiwang.com
-  password: dongtaiwang.com
+  port: 11540
+  type: tuic
+  uuid: 6845cb43-4b8d-49e8-a011-1051d6c4d2ae
+  password: 6845cb43-4b8d-49e8-a011-1051d6c4d2ae
+  sni: www.microsoft.com
+  alpn:
+  - h3
+  request-timeout: 8000
+  udp-relay-mode: native
+  skip-cert-verify: true
+  congestion-controller: bbr
 - name: Unknown_hysteria_101
   type: hysteria
   server: 2a14:7584:d097::a
@@ -561,18 +573,19 @@ proxies:
       enabled: true
       up: 50
       down: 100
-- name: Unknown_hysteria_131
-  type: hysteria
-  server: 208.87.243.151
-  port: 10023
-  auth-str: dongtaiwang.com
-  sni: apple.com
-  skip-cert-verify: true
+- name: Unknown_tuic_131
+  server: 157.254.223.48
+  port: 11540
+  type: tuic
+  uuid: 6845cb43-4b8d-49e8-a011-1051d6c4d2ae
+  password: 6845cb43-4b8d-49e8-a011-1051d6c4d2ae
+  sni: www.microsoft.com
   alpn:
   - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
+  request-timeout: 8000
+  udp-relay-mode: native
+  skip-cert-verify: true
+  congestion-controller: bbr
 - name: Unknown_anytls_141
   type: anytls
   server: 151.242.183.75
@@ -876,11 +889,11 @@ proxies:
   - h3
 - name: Unknown_hy2_0
   type: hysteria2
-  server: 89.144.35.34
-  port: 43608
+  server: 157.254.223.43
+  port: 27921
   password: dongtaiwang.com
   fast-open: true
-  sni: apple.com
+  sni: www.bing.com
   skip-cert-verify: true
 - name: Unknown_hy2_1
   type: hysteria2
@@ -890,51 +903,19 @@ proxies:
   fast-open: true
   sni: apple.com
   skip-cert-verify: true
-- name: Unknown_hy2_2
-  type: hysteria2
-  server: 62.210.124.146
-  port: 22000
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.microsoft.com
-  skip-cert-verify: true
-- name: Unknown_hy2_3
-  type: hysteria2
-  server: '[2a14'
-  port: 7584
-  password: dongtaiwang.com
-  fast-open: true
-  sni: apple.com
-  skip-cert-verify: true
 - name: Unknown_hy2_4
   type: hysteria2
-  server: 89.144.35.34
-  port: 43608
+  server: 157.254.223.43
+  port: 27921
   password: dongtaiwang.com
   fast-open: true
-  sni: apple.com
+  sni: www.bing.com
   skip-cert-verify: true
 - name: Unknown_hy2_5
   type: hysteria2
   server: 157.254.223.24
   port: 30088
   password: alvin9999.com
-  fast-open: true
-  sni: apple.com
-  skip-cert-verify: true
-- name: Unknown_hy2_6
-  type: hysteria2
-  server: 62.210.124.146
-  port: 22000
-  password: dongtaiwang.com
-  fast-open: true
-  sni: www.microsoft.com
-  skip-cert-verify: true
-- name: Unknown_hy2_7
-  type: hysteria2
-  server: '[2a14'
-  port: 7584
-  password: dongtaiwang.com
   fast-open: true
   sni: apple.com
   skip-cert-verify: true
@@ -953,7 +934,7 @@ proxy-groups:
   - Unknown_vless_21
   - Unknown_vless_22
   - Unknown_vless_23
-  - Unknown_mieru_31
+  - Unknown_tuic_31
   - Unknown_hysteria_41
   - Unknown_hysteria_51
   - Unknown_tuic_61
@@ -965,7 +946,7 @@ proxy-groups:
   - Unknown_vless_81
   - Unknown_vless_82
   - Unknown_vless_83
-  - Unknown_mieru_91
+  - Unknown_tuic_91
   - Unknown_hysteria_101
   - Unknown_hysteria_111
   - Unknown_hysteria_121
@@ -973,7 +954,7 @@ proxy-groups:
   - Unknown_vless_123
   - Unknown_vless_124
   - Unknown_vless_125
-  - Unknown_hysteria_131
+  - Unknown_tuic_131
   - Unknown_anytls_141
   - Unknown_hysteria_142
   - Unknown_anytls_151
@@ -996,12 +977,8 @@ proxy-groups:
   - Unknown_hy_7
   - Unknown_hy2_0
   - Unknown_hy2_1
-  - Unknown_hy2_2
-  - Unknown_hy2_3
   - Unknown_hy2_4
   - Unknown_hy2_5
-  - Unknown_hy2_6
-  - Unknown_hy2_7
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -1017,7 +994,7 @@ proxy-groups:
   - Unknown_vless_21
   - Unknown_vless_22
   - Unknown_vless_23
-  - Unknown_mieru_31
+  - Unknown_tuic_31
   - Unknown_hysteria_41
   - Unknown_hysteria_51
   - Unknown_tuic_61
@@ -1029,7 +1006,7 @@ proxy-groups:
   - Unknown_vless_81
   - Unknown_vless_82
   - Unknown_vless_83
-  - Unknown_mieru_91
+  - Unknown_tuic_91
   - Unknown_hysteria_101
   - Unknown_hysteria_111
   - Unknown_hysteria_121
@@ -1037,7 +1014,7 @@ proxy-groups:
   - Unknown_vless_123
   - Unknown_vless_124
   - Unknown_vless_125
-  - Unknown_hysteria_131
+  - Unknown_tuic_131
   - Unknown_anytls_141
   - Unknown_hysteria_142
   - Unknown_anytls_151
@@ -1060,12 +1037,8 @@ proxy-groups:
   - Unknown_hy_7
   - Unknown_hy2_0
   - Unknown_hy2_1
-  - Unknown_hy2_2
-  - Unknown_hy2_3
   - Unknown_hy2_4
   - Unknown_hy2_5
-  - Unknown_hy2_6
-  - Unknown_hy2_7
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT

@@ -465,114 +465,19 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_hysteria_121
-  type: hysteria
-  server: ip1.758733.xyz
-  port: 23008
-  auth-str: alvin9999.com
-  sni: apple.com
-  skip-cert-verify: true
+- name: Unknown_tuic_121
+  server: 5.178.101.117
+  port: 30006
+  type: tuic
+  uuid: 36106e0f-4d9a-470b-a3fd-535f3b7a1e92
+  password: dongtaiwang.com
+  sni: www.microsoft.com
   alpn:
   - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: Unknown_vless_122
-  type: vless
-  server: 2001:bc8:32d7:181::2
-  port: 17401
-  uuid: add14a5b-f648-4423-8a1f-8b8f54c0daef
-  network: tcp
-  udp: true
-  tls: true
-  flow: null
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: IXcXrT_Y0ATTZlGOhPnSmKo-cuGr4yMKV9Rz4-nA3yU
-    short-id: 8ef4455ba637425b
-  smux:
-    enabled: true
-    protocol: h2mux
-    max-connections: 1
-    min-streams: 4
-    padding: true
-    brutal-opts:
-      enabled: true
-      up: 50
-      down: 100
-- name: Unknown_vless_123
-  type: vless
-  server: 2001:bc8:32d7:181::3
-  port: 17401
-  uuid: add14a5b-f648-4423-8a1f-8b8f54c0daef
-  network: tcp
-  udp: true
-  tls: true
-  flow: null
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: IXcXrT_Y0ATTZlGOhPnSmKo-cuGr4yMKV9Rz4-nA3yU
-    short-id: 8ef4455ba637425b
-  smux:
-    enabled: true
-    protocol: h2mux
-    max-connections: 1
-    min-streams: 4
-    padding: true
-    brutal-opts:
-      enabled: true
-      up: 50
-      down: 100
-- name: Unknown_vless_124
-  type: vless
-  server: 2001:bc8:32d7:181::4
-  port: 17401
-  uuid: add14a5b-f648-4423-8a1f-8b8f54c0daef
-  network: tcp
-  udp: true
-  tls: true
-  flow: null
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: IXcXrT_Y0ATTZlGOhPnSmKo-cuGr4yMKV9Rz4-nA3yU
-    short-id: 8ef4455ba637425b
-  smux:
-    enabled: true
-    protocol: h2mux
-    max-connections: 1
-    min-streams: 4
-    padding: true
-    brutal-opts:
-      enabled: true
-      up: 50
-      down: 100
-- name: Unknown_vless_125
-  type: vless
-  server: 2001:bc8:32d7:181::5
-  port: 17401
-  uuid: add14a5b-f648-4423-8a1f-8b8f54c0daef
-  network: tcp
-  udp: true
-  tls: true
-  flow: null
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: IXcXrT_Y0ATTZlGOhPnSmKo-cuGr4yMKV9Rz4-nA3yU
-    short-id: 8ef4455ba637425b
-  smux:
-    enabled: true
-    protocol: h2mux
-    max-connections: 1
-    min-streams: 4
-    padding: true
-    brutal-opts:
-      enabled: true
-      up: 50
-      down: 100
+  request-timeout: 8000
+  udp-relay-mode: native
+  skip-cert-verify: true
+  congestion-controller: bbr
 - name: Unknown_tuic_131
   server: 157.254.223.48
   port: 11540
@@ -627,114 +532,31 @@ proxies:
   - http/1.1
   skip-cert-verify: true
 - name: Unknown_tuic_161
-  server: ip1.758733.xyz
-  port: 10088
+  server: 5.178.101.117
+  port: 30006
   type: tuic
-  uuid: 9bbd1f42-7ae7-4239-bd10-a68de95e3295
+  uuid: 36106e0f-4d9a-470b-a3fd-535f3b7a1e92
   password: dongtaiwang.com
-  sni: apple.com
+  sni: www.microsoft.com
   alpn:
   - h3
   request-timeout: 8000
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: Unknown_hysteria_162
-  type: hysteria
-  server: ip1.758733.xyz
-  port: 23008
-  auth-str: alvin9999.com
-  sni: apple.com
-  skip-cert-verify: true
+- name: Unknown_tuic_171
+  server: 157.254.223.48
+  port: 11540
+  type: tuic
+  uuid: 6845cb43-4b8d-49e8-a011-1051d6c4d2ae
+  password: 6845cb43-4b8d-49e8-a011-1051d6c4d2ae
+  sni: www.microsoft.com
   alpn:
   - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: Unknown_vless_163
-  type: vless
-  server: 2001:bc8:32d7:181::3
-  port: 17401
-  uuid: add14a5b-f648-4423-8a1f-8b8f54c0daef
-  network: tcp
-  udp: true
-  tls: true
-  flow: null
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: IXcXrT_Y0ATTZlGOhPnSmKo-cuGr4yMKV9Rz4-nA3yU
-    short-id: 8ef4455ba637425b
-  smux:
-    enabled: true
-    protocol: h2mux
-    max-connections: 1
-    min-streams: 4
-    padding: true
-    brutal-opts:
-      enabled: true
-      up: 50
-      down: 100
-- name: Unknown_vless_164
-  type: vless
-  server: 2001:bc8:32d7:181::4
-  port: 17401
-  uuid: add14a5b-f648-4423-8a1f-8b8f54c0daef
-  network: tcp
-  udp: true
-  tls: true
-  flow: null
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: IXcXrT_Y0ATTZlGOhPnSmKo-cuGr4yMKV9Rz4-nA3yU
-    short-id: 8ef4455ba637425b
-  smux:
-    enabled: true
-    protocol: h2mux
-    max-connections: 1
-    min-streams: 4
-    padding: true
-    brutal-opts:
-      enabled: true
-      up: 50
-      down: 100
-- name: Unknown_vless_165
-  type: vless
-  server: 2001:bc8:32d7:181::5
-  port: 17401
-  uuid: add14a5b-f648-4423-8a1f-8b8f54c0daef
-  network: tcp
-  udp: true
-  tls: true
-  flow: null
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  reality-opts:
-    public-key: IXcXrT_Y0ATTZlGOhPnSmKo-cuGr4yMKV9Rz4-nA3yU
-    short-id: 8ef4455ba637425b
-  smux:
-    enabled: true
-    protocol: h2mux
-    max-connections: 1
-    min-streams: 4
-    padding: true
-    brutal-opts:
-      enabled: true
-      up: 50
-      down: 100
-- name: Unknown_hysteria_171
-  type: hysteria
-  server: 208.87.243.151
-  port: 10023
-  auth-str: dongtaiwang.com
-  sni: apple.com
+  request-timeout: 8000
+  udp-relay-mode: native
   skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
+  congestion-controller: bbr
 - name: Unknown_anytls_181
   type: anytls
   server: 151.242.183.75
@@ -949,21 +771,13 @@ proxy-groups:
   - Unknown_tuic_91
   - Unknown_hysteria_101
   - Unknown_hysteria_111
-  - Unknown_hysteria_121
-  - Unknown_vless_122
-  - Unknown_vless_123
-  - Unknown_vless_124
-  - Unknown_vless_125
+  - Unknown_tuic_121
   - Unknown_tuic_131
   - Unknown_anytls_141
   - Unknown_hysteria_142
   - Unknown_anytls_151
   - Unknown_tuic_161
-  - Unknown_hysteria_162
-  - Unknown_vless_163
-  - Unknown_vless_164
-  - Unknown_vless_165
-  - Unknown_hysteria_171
+  - Unknown_tuic_171
   - Unknown_anytls_181
   - Unknown_hysteria_182
   - Unknown_anytls_191
@@ -1009,21 +823,13 @@ proxy-groups:
   - Unknown_tuic_91
   - Unknown_hysteria_101
   - Unknown_hysteria_111
-  - Unknown_hysteria_121
-  - Unknown_vless_122
-  - Unknown_vless_123
-  - Unknown_vless_124
-  - Unknown_vless_125
+  - Unknown_tuic_121
   - Unknown_tuic_131
   - Unknown_anytls_141
   - Unknown_hysteria_142
   - Unknown_anytls_151
   - Unknown_tuic_161
-  - Unknown_hysteria_162
-  - Unknown_vless_163
-  - Unknown_vless_164
-  - Unknown_vless_165
-  - Unknown_hysteria_171
+  - Unknown_tuic_171
   - Unknown_anytls_181
   - Unknown_hysteria_182
   - Unknown_anytls_191

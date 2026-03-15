@@ -667,20 +667,6 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: Unknown_hy_5
-  type: hysteria
-  server: 5.83.129.153
-  port: 20088
-  ports: 20088
-  auth_str: dongtaiwang.com
-  up: 1000
-  down: 1000
-  fast-open: true
-  protocol: udp
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
 - name: Unknown_hy_6
   type: hysteria
   server: 5.83.129.90
@@ -786,7 +772,6 @@ proxy-groups:
   - Unknown_hy_2
   - Unknown_hy_3
   - Unknown_hy_4
-  - Unknown_hy_5
   - Unknown_hy_6
   - Unknown_hy_7
   - Unknown_hy2_0
@@ -838,7 +823,6 @@ proxy-groups:
   - Unknown_hy_2
   - Unknown_hy_3
   - Unknown_hy_4
-  - Unknown_hy_5
   - Unknown_hy_6
   - Unknown_hy_7
   - Unknown_hy2_0

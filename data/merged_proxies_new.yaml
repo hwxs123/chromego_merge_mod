@@ -717,14 +717,6 @@ proxies:
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: Unknown_hy2_1
-  type: hysteria2
-  server: 157.254.223.24
-  port: 30088
-  password: alvin9999.com
-  fast-open: true
-  sni: apple.com
-  skip-cert-verify: true
 - name: Unknown_hy2_4
   type: hysteria2
   server: 157.254.223.43
@@ -732,14 +724,6 @@ proxies:
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
-  skip-cert-verify: true
-- name: Unknown_hy2_5
-  type: hysteria2
-  server: 157.254.223.24
-  port: 30088
-  password: alvin9999.com
-  fast-open: true
-  sni: apple.com
   skip-cert-verify: true
 proxy-groups:
 - name: 节点选择
@@ -790,9 +774,7 @@ proxy-groups:
   - Unknown_hy_6
   - Unknown_hy_7
   - Unknown_hy2_0
-  - Unknown_hy2_1
   - Unknown_hy2_4
-  - Unknown_hy2_5
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -842,9 +824,7 @@ proxy-groups:
   - Unknown_hy_6
   - Unknown_hy_7
   - Unknown_hy2_0
-  - Unknown_hy2_1
   - Unknown_hy2_4
-  - Unknown_hy2_5
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT

@@ -465,7 +465,14 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_tuic_121
+- name: Unknown_mieru_121
+  type: mieru
+  server: 151.242.183.103
+  port: 23014
+  transport: TCP
+  username: tcp_3flnfpno
+  password: A4Hv3H5yb8meP1MN
+- name: Unknown_tuic_122
   server: 5.178.101.117
   port: 30006
   type: tuic
@@ -531,7 +538,14 @@ proxies:
   - h2
   - http/1.1
   skip-cert-verify: true
-- name: Unknown_tuic_161
+- name: Unknown_mieru_161
+  type: mieru
+  server: 151.242.183.103
+  port: 23014
+  transport: TCP
+  username: tcp_3flnfpno
+  password: A4Hv3H5yb8meP1MN
+- name: Unknown_tuic_162
   server: 5.178.101.117
   port: 30006
   type: tuic
@@ -755,12 +769,14 @@ proxy-groups:
   - Unknown_tuic_91
   - Unknown_hysteria_101
   - Unknown_hysteria_111
-  - Unknown_tuic_121
+  - Unknown_mieru_121
+  - Unknown_tuic_122
   - Unknown_tuic_131
   - Unknown_anytls_141
   - Unknown_hysteria_142
   - Unknown_anytls_151
-  - Unknown_tuic_161
+  - Unknown_mieru_161
+  - Unknown_tuic_162
   - Unknown_tuic_171
   - Unknown_anytls_181
   - Unknown_hysteria_182
@@ -805,12 +821,14 @@ proxy-groups:
   - Unknown_tuic_91
   - Unknown_hysteria_101
   - Unknown_hysteria_111
-  - Unknown_tuic_121
+  - Unknown_mieru_121
+  - Unknown_tuic_122
   - Unknown_tuic_131
   - Unknown_anytls_141
   - Unknown_hysteria_142
   - Unknown_anytls_151
-  - Unknown_tuic_161
+  - Unknown_mieru_161
+  - Unknown_tuic_162
   - Unknown_tuic_171
   - Unknown_anytls_181
   - Unknown_hysteria_182

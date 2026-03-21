@@ -122,20 +122,19 @@ proxies:
       enabled: true
       up: 50
       down: 100
-- name: Unknown_anytls_11
-  type: anytls
-  server: 45.221.98.14
-  port: 59901
-  password: dongtaiwang.com
-  client-fingerprint: chrome
-  udp: true
-  idle-session-check-interval: 30
-  idle-session-timeout: 30
-  min-idle-session: 0
+- name: Unknown_tuic_11
+  server: 157.254.223.24
+  port: 41122
+  type: tuic
+  uuid: 2aec7bfd-4178-4ee5-9bc5-fe4c241fdc15
+  password: 2aec7bfd-4178-4ee5-9bc5-fe4c241fdc15
+  sni: www.microsoft.com
   alpn:
-  - h2
-  - http/1.1
+  - h3
+  request-timeout: 8000
+  udp-relay-mode: native
   skip-cert-verify: true
+  congestion-controller: bbr
 - name: Unknown_vless_21
   type: vless
   server: 2001:bc8:32d7:181::3
@@ -342,20 +341,19 @@ proxies:
       enabled: true
       up: 50
       down: 100
-- name: Unknown_anytls_71
-  type: anytls
-  server: 45.221.98.14
-  port: 59901
-  password: dongtaiwang.com
-  client-fingerprint: chrome
-  udp: true
-  idle-session-check-interval: 30
-  idle-session-timeout: 30
-  min-idle-session: 0
+- name: Unknown_tuic_71
+  server: 157.254.223.24
+  port: 41122
+  type: tuic
+  uuid: 2aec7bfd-4178-4ee5-9bc5-fe4c241fdc15
+  password: 2aec7bfd-4178-4ee5-9bc5-fe4c241fdc15
+  sni: www.microsoft.com
   alpn:
-  - h2
-  - http/1.1
+  - h3
+  request-timeout: 8000
+  udp-relay-mode: native
   skip-cert-verify: true
+  congestion-controller: bbr
 - name: Unknown_vless_81
   type: vless
   server: 2001:bc8:32d7:181::3
@@ -750,7 +748,7 @@ proxy-groups:
   - Unknown_vless_03
   - Unknown_vless_04
   - Unknown_vless_05
-  - Unknown_anytls_11
+  - Unknown_tuic_11
   - Unknown_vless_21
   - Unknown_vless_22
   - Unknown_vless_23
@@ -762,7 +760,7 @@ proxy-groups:
   - Unknown_vless_63
   - Unknown_vless_64
   - Unknown_vless_65
-  - Unknown_anytls_71
+  - Unknown_tuic_71
   - Unknown_vless_81
   - Unknown_vless_82
   - Unknown_vless_83
@@ -802,7 +800,7 @@ proxy-groups:
   - Unknown_vless_03
   - Unknown_vless_04
   - Unknown_vless_05
-  - Unknown_anytls_11
+  - Unknown_tuic_11
   - Unknown_vless_21
   - Unknown_vless_22
   - Unknown_vless_23
@@ -814,7 +812,7 @@ proxy-groups:
   - Unknown_vless_63
   - Unknown_vless_64
   - Unknown_vless_65
-  - Unknown_anytls_71
+  - Unknown_tuic_71
   - Unknown_vless_81
   - Unknown_vless_82
   - Unknown_vless_83

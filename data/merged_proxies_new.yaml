@@ -329,20 +329,7 @@ proxies:
       enabled: true
       up: 50
       down: 100
-- name: Unknown_tuic_71
-  server: 157.254.223.24
-  port: 41122
-  type: tuic
-  uuid: 2aec7bfd-4178-4ee5-9bc5-fe4c241fdc15
-  password: 2aec7bfd-4178-4ee5-9bc5-fe4c241fdc15
-  sni: www.microsoft.com
-  alpn:
-  - h3
-  request-timeout: 8000
-  udp-relay-mode: native
-  skip-cert-verify: true
-  congestion-controller: bbr
-- name: Unknown_hysteria_81
+- name: Unknown_hysteria_71
   type: hysteria
   server: 195.154.200.13
   port: 45008
@@ -354,7 +341,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_vless_82
+- name: Unknown_vless_72
   type: vless
   server: 2001:bc8:32d7:181::2
   port: 17401
@@ -378,7 +365,7 @@ proxies:
       enabled: true
       up: 50
       down: 100
-- name: Unknown_vless_83
+- name: Unknown_vless_73
   type: vless
   server: 2001:bc8:32d7:181::3
   port: 17401
@@ -402,6 +389,19 @@ proxies:
       enabled: true
       up: 50
       down: 100
+- name: Unknown_tuic_81
+  server: 157.254.223.24
+  port: 41122
+  type: tuic
+  uuid: 2aec7bfd-4178-4ee5-9bc5-fe4c241fdc15
+  password: 2aec7bfd-4178-4ee5-9bc5-fe4c241fdc15
+  sni: www.microsoft.com
+  alpn:
+  - h3
+  request-timeout: 8000
+  udp-relay-mode: native
+  skip-cert-verify: true
+  congestion-controller: bbr
 - name: Unknown_tuic_91
   server: 157.254.223.48
   port: 11540
@@ -736,10 +736,10 @@ proxy-groups:
   - Unknown_vless_63
   - Unknown_vless_64
   - Unknown_vless_65
-  - Unknown_tuic_71
-  - Unknown_hysteria_81
-  - Unknown_vless_82
-  - Unknown_vless_83
+  - Unknown_hysteria_71
+  - Unknown_vless_72
+  - Unknown_vless_73
+  - Unknown_tuic_81
   - Unknown_tuic_91
   - Unknown_hysteria_101
   - Unknown_hysteria_111
@@ -788,10 +788,10 @@ proxy-groups:
   - Unknown_vless_63
   - Unknown_vless_64
   - Unknown_vless_65
-  - Unknown_tuic_71
-  - Unknown_hysteria_81
-  - Unknown_vless_82
-  - Unknown_vless_83
+  - Unknown_hysteria_71
+  - Unknown_vless_72
+  - Unknown_vless_73
+  - Unknown_tuic_81
   - Unknown_tuic_91
   - Unknown_hysteria_101
   - Unknown_hysteria_111

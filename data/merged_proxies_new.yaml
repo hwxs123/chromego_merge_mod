@@ -65,11 +65,11 @@ proxies:
   skip-cert-verify: true
   congestion-controller: bbr
 - name: Unknown_tuic_31
-  server: 157.254.223.48
-  port: 11540
+  server: 5.178.101.117
+  port: 30006
   type: tuic
-  uuid: 6845cb43-4b8d-49e8-a011-1051d6c4d2ae
-  password: 6845cb43-4b8d-49e8-a011-1051d6c4d2ae
+  uuid: 36106e0f-4d9a-470b-a3fd-535f3b7a1e92
+  password: dongtaiwang.com
   sni: www.microsoft.com
   alpn:
   - h3
@@ -141,11 +141,11 @@ proxies:
   skip-cert-verify: true
   congestion-controller: bbr
 - name: Unknown_tuic_91
-  server: 157.254.223.48
-  port: 11540
+  server: 5.178.101.117
+  port: 30006
   type: tuic
-  uuid: 6845cb43-4b8d-49e8-a011-1051d6c4d2ae
-  password: 6845cb43-4b8d-49e8-a011-1051d6c4d2ae
+  uuid: 36106e0f-4d9a-470b-a3fd-535f3b7a1e92
+  password: dongtaiwang.com
   sni: www.microsoft.com
   alpn:
   - h3
@@ -198,12 +198,12 @@ proxies:
   skip-cert-verify: true
   congestion-controller: bbr
 - name: Unknown_tuic_131
-  server: 157.254.223.48
-  port: 11540
+  server: 163.172.116.154
+  port: 33887
   type: tuic
-  uuid: 6845cb43-4b8d-49e8-a011-1051d6c4d2ae
-  password: 6845cb43-4b8d-49e8-a011-1051d6c4d2ae
-  sni: www.microsoft.com
+  uuid: 9adb384a-0f16-4501-a8f3-b6b2556fce87
+  password: dongtaiwang.com
+  sni: bing.com
   alpn:
   - h3
   request-timeout: 8000
@@ -271,12 +271,12 @@ proxies:
   skip-cert-verify: true
   congestion-controller: bbr
 - name: Unknown_tuic_171
-  server: 157.254.223.48
-  port: 11540
+  server: 163.172.116.154
+  port: 33887
   type: tuic
-  uuid: 6845cb43-4b8d-49e8-a011-1051d6c4d2ae
-  password: 6845cb43-4b8d-49e8-a011-1051d6c4d2ae
-  sni: www.microsoft.com
+  uuid: 9adb384a-0f16-4501-a8f3-b6b2556fce87
+  password: dongtaiwang.com
+  sni: bing.com
   alpn:
   - h3
   request-timeout: 8000

@@ -178,11 +178,11 @@ proxies:
   up: 11 Mbps
   down: 55 Mbps
 - name: Unknown_tuic_121
-  server: 83.243.86.103
-  port: 40676
+  server: 151.242.183.103
+  port: 11882
   type: tuic
-  uuid: 06143eb5-a648-46b7-a92a-41683f612a10
-  password: 06143eb5-a648-46b7-a92a-41683f612a10
+  uuid: e473c549-4737-4236-8f6b-6840fd22a9d9
+  password: dongtaiwang.com
   sni: www.microsoft.com
   alpn:
   - h3
@@ -257,11 +257,11 @@ proxies:
   - http/1.1
   skip-cert-verify: true
 - name: Unknown_tuic_161
-  server: 83.243.86.103
-  port: 40676
+  server: 151.242.183.103
+  port: 11882
   type: tuic
-  uuid: 06143eb5-a648-46b7-a92a-41683f612a10
-  password: 06143eb5-a648-46b7-a92a-41683f612a10
+  uuid: e473c549-4737-4236-8f6b-6840fd22a9d9
+  password: dongtaiwang.com
   sni: www.microsoft.com
   alpn:
   - h3

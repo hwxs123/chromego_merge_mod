@@ -177,19 +177,20 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_tuic_121
-  server: 151.242.183.103
-  port: 11882
-  type: tuic
-  uuid: e473c549-4737-4236-8f6b-6840fd22a9d9
+- name: Unknown_anytls_121
+  type: anytls
+  server: 45.221.98.11
+  port: 11777
   password: dongtaiwang.com
-  sni: www.microsoft.com
+  client-fingerprint: chrome
+  udp: true
+  idle-session-check-interval: 30
+  idle-session-timeout: 30
+  min-idle-session: 0
   alpn:
-  - h3
-  request-timeout: 8000
-  udp-relay-mode: native
+  - h2
+  - http/1.1
   skip-cert-verify: true
-  congestion-controller: bbr
 - name: Unknown_tuic_122
   server: 5.178.101.117
   port: 30006
@@ -256,19 +257,20 @@ proxies:
   - h2
   - http/1.1
   skip-cert-verify: true
-- name: Unknown_tuic_161
-  server: 151.242.183.103
-  port: 11882
-  type: tuic
-  uuid: e473c549-4737-4236-8f6b-6840fd22a9d9
+- name: Unknown_anytls_161
+  type: anytls
+  server: 45.221.98.11
+  port: 11777
   password: dongtaiwang.com
-  sni: www.microsoft.com
+  client-fingerprint: chrome
+  udp: true
+  idle-session-check-interval: 30
+  idle-session-timeout: 30
+  min-idle-session: 0
   alpn:
-  - h3
-  request-timeout: 8000
-  udp-relay-mode: native
+  - h2
+  - http/1.1
   skip-cert-verify: true
-  congestion-controller: bbr
 - name: Unknown_tuic_162
   server: 5.178.101.117
   port: 30006
@@ -481,13 +483,13 @@ proxy-groups:
   - Unknown_tuic_91
   - Unknown_hysteria_101
   - Unknown_hysteria_111
-  - Unknown_tuic_121
+  - Unknown_anytls_121
   - Unknown_tuic_122
   - Unknown_tuic_131
   - Unknown_anytls_141
   - Unknown_hysteria_142
   - Unknown_anytls_151
-  - Unknown_tuic_161
+  - Unknown_anytls_161
   - Unknown_tuic_162
   - Unknown_tuic_171
   - Unknown_anytls_181
@@ -521,13 +523,13 @@ proxy-groups:
   - Unknown_tuic_91
   - Unknown_hysteria_101
   - Unknown_hysteria_111
-  - Unknown_tuic_121
+  - Unknown_anytls_121
   - Unknown_tuic_122
   - Unknown_tuic_131
   - Unknown_anytls_141
   - Unknown_hysteria_142
   - Unknown_anytls_151
-  - Unknown_tuic_161
+  - Unknown_anytls_161
   - Unknown_tuic_162
   - Unknown_tuic_171
   - Unknown_anytls_181

@@ -101,19 +101,6 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_tuic_61
-  server: ip1.758733.xyz
-  port: 10088
-  type: tuic
-  uuid: 9bbd1f42-7ae7-4239-bd10-a68de95e3295
-  password: dongtaiwang.com
-  sni: apple.com
-  alpn:
-  - h3
-  request-timeout: 8000
-  udp-relay-mode: native
-  skip-cert-verify: true
-  congestion-controller: bbr
 - name: Unknown_tuic_71
   server: 163.172.116.154
   port: 33887
@@ -217,32 +204,19 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: Unknown_anytls_141
-  type: anytls
-  server: 151.242.183.75
-  port: 33333
-  password: dongtaiwang.com
-  client-fingerprint: chrome
-  udp: true
-  idle-session-check-interval: 30
-  idle-session-timeout: 30
-  min-idle-session: 0
-  alpn:
-  - h2
-  - http/1.1
-  skip-cert-verify: true
-- name: Unknown_hysteria_142
-  type: hysteria
-  server: 2a14:7584:d097::a
-  port: 54177
-  auth-str: dongtaiwang.com
+- name: Unknown_tuic_141
+  server: 83.243.86.109
+  port: 27947
+  type: tuic
+  uuid: 261d95d4-73c0-4c33-957a-04b6d407bea2
+  password: 261d95d4-73c0-4c33-957a-04b6d407bea2
   sni: bing.com
-  skip-cert-verify: true
   alpn:
   - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
+  request-timeout: 8000
+  udp-relay-mode: native
+  skip-cert-verify: true
+  congestion-controller: bbr
 - name: Unknown_anytls_151
   type: anytls
   server: fan2.856098.xyz
@@ -297,32 +271,19 @@ proxies:
   udp-relay-mode: native
   skip-cert-verify: true
   congestion-controller: bbr
-- name: Unknown_anytls_181
-  type: anytls
-  server: 151.242.183.75
-  port: 33333
-  password: dongtaiwang.com
-  client-fingerprint: chrome
-  udp: true
-  idle-session-check-interval: 30
-  idle-session-timeout: 30
-  min-idle-session: 0
-  alpn:
-  - h2
-  - http/1.1
-  skip-cert-verify: true
-- name: Unknown_hysteria_182
-  type: hysteria
-  server: 2a14:7584:d097::a
-  port: 54177
-  auth-str: dongtaiwang.com
+- name: Unknown_tuic_181
+  server: 83.243.86.109
+  port: 27947
+  type: tuic
+  uuid: 261d95d4-73c0-4c33-957a-04b6d407bea2
+  password: 261d95d4-73c0-4c33-957a-04b6d407bea2
   sni: bing.com
-  skip-cert-verify: true
   alpn:
   - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
+  request-timeout: 8000
+  udp-relay-mode: native
+  skip-cert-verify: true
+  congestion-controller: bbr
 - name: Unknown_anytls_191
   type: anytls
   server: fan2.856098.xyz
@@ -477,7 +438,6 @@ proxy-groups:
   - Unknown_tuic_31
   - Unknown_hysteria_41
   - Unknown_hysteria_51
-  - Unknown_tuic_61
   - Unknown_tuic_71
   - Unknown_tuic_81
   - Unknown_tuic_91
@@ -486,14 +446,12 @@ proxy-groups:
   - Unknown_anytls_121
   - Unknown_tuic_122
   - Unknown_tuic_131
-  - Unknown_anytls_141
-  - Unknown_hysteria_142
+  - Unknown_tuic_141
   - Unknown_anytls_151
   - Unknown_anytls_161
   - Unknown_tuic_162
   - Unknown_tuic_171
-  - Unknown_anytls_181
-  - Unknown_hysteria_182
+  - Unknown_tuic_181
   - Unknown_anytls_191
   - Unknown_hy_0
   - Unknown_hy_1
@@ -517,7 +475,6 @@ proxy-groups:
   - Unknown_tuic_31
   - Unknown_hysteria_41
   - Unknown_hysteria_51
-  - Unknown_tuic_61
   - Unknown_tuic_71
   - Unknown_tuic_81
   - Unknown_tuic_91
@@ -526,14 +483,12 @@ proxy-groups:
   - Unknown_anytls_121
   - Unknown_tuic_122
   - Unknown_tuic_131
-  - Unknown_anytls_141
-  - Unknown_hysteria_142
+  - Unknown_tuic_141
   - Unknown_anytls_151
   - Unknown_anytls_161
   - Unknown_tuic_162
   - Unknown_tuic_171
-  - Unknown_anytls_181
-  - Unknown_hysteria_182
+  - Unknown_tuic_181
   - Unknown_anytls_191
   - Unknown_hy_0
   - Unknown_hy_1

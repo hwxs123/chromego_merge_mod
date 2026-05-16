@@ -25,19 +25,18 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: Unknown_tuic_01
-  server: ip1.758733.xyz
-  port: 10088
-  type: tuic
-  uuid: 9bbd1f42-7ae7-4239-bd10-a68de95e3295
-  password: dongtaiwang.com
-  sni: apple.com
+- name: Unknown_hysteria_01
+  type: hysteria
+  server: 62.210.29.98
+  port: 10066
+  auth-str: github.com/Alvin9999-newpac/fanqiang
+  sni: bing.com
+  skip-cert-verify: true
   alpn:
   - h3
-  request-timeout: 8000
-  udp-relay-mode: native
-  skip-cert-verify: true
-  congestion-controller: bbr
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 - name: Unknown_hysteria_11
   type: hysteria
   server: 163.172.117.163
@@ -100,19 +99,18 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_tuic_61
-  server: ip1.758733.xyz
-  port: 10088
-  type: tuic
-  uuid: 9bbd1f42-7ae7-4239-bd10-a68de95e3295
-  password: dongtaiwang.com
-  sni: apple.com
+- name: Unknown_hysteria_61
+  type: hysteria
+  server: 62.210.29.98
+  port: 10066
+  auth-str: github.com/Alvin9999-newpac/fanqiang
+  sni: bing.com
+  skip-cert-verify: true
   alpn:
   - h3
-  request-timeout: 8000
-  udp-relay-mode: native
-  skip-cert-verify: true
-  congestion-controller: bbr
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 - name: Unknown_hysteria_71
   type: hysteria
   server: 163.172.117.163
@@ -459,13 +457,13 @@ proxy-groups:
   proxies:
   - 自动选择
   - DIRECT
-  - Unknown_tuic_01
+  - Unknown_hysteria_01
   - Unknown_hysteria_11
   - Unknown_tuic_21
   - Unknown_tuic_31
   - Unknown_hysteria_41
   - Unknown_hysteria_51
-  - Unknown_tuic_61
+  - Unknown_hysteria_61
   - Unknown_hysteria_71
   - Unknown_tuic_81
   - Unknown_tuic_91
@@ -499,13 +497,13 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - Unknown_tuic_01
+  - Unknown_hysteria_01
   - Unknown_hysteria_11
   - Unknown_tuic_21
   - Unknown_tuic_31
   - Unknown_hysteria_41
   - Unknown_hysteria_51
-  - Unknown_tuic_61
+  - Unknown_hysteria_61
   - Unknown_hysteria_71
   - Unknown_tuic_81
   - Unknown_tuic_91

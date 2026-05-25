@@ -429,11 +429,11 @@ proxies:
   skip-cert-verify: true
 - name: Unknown_hy2_1
   type: hysteria2
-  server: 157.254.223.43
-  port: 27921
-  password: dongtaiwang.com
+  server: 163.172.126.108
+  port: 41227
+  password: github.com/Alvin9999-newpac/fanqiang
   fast-open: true
-  sni: www.bing.com
+  sni: www.microsoft.com
   skip-cert-verify: true
 - name: Unknown_hy2_4
   type: hysteria2
@@ -445,11 +445,11 @@ proxies:
   skip-cert-verify: true
 - name: Unknown_hy2_5
   type: hysteria2
-  server: 157.254.223.43
-  port: 27921
-  password: dongtaiwang.com
+  server: 163.172.126.108
+  port: 41227
+  password: github.com/Alvin9999-newpac/fanqiang
   fast-open: true
-  sni: www.bing.com
+  sni: www.microsoft.com
   skip-cert-verify: true
 proxy-groups:
 - name: 节点选择

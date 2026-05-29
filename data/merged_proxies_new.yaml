@@ -429,8 +429,8 @@ proxies:
   skip-cert-verify: true
 - name: Unknown_hy2_1
   type: hysteria2
-  server: 163.172.126.108
-  port: 41227
+  server: 62.210.147.2
+  port: 43115
   password: github.com/Alvin9999-newpac/fanqiang
   fast-open: true
   sni: www.microsoft.com
@@ -445,8 +445,8 @@ proxies:
   skip-cert-verify: true
 - name: Unknown_hy2_5
   type: hysteria2
-  server: 163.172.126.108
-  port: 41227
+  server: 62.210.147.2
+  port: 43115
   password: github.com/Alvin9999-newpac/fanqiang
   fast-open: true
   sni: www.microsoft.com

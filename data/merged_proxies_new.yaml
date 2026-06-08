@@ -169,8 +169,8 @@ proxies:
   down: 55 Mbps
 - name: Unknown_anytls_121
   type: anytls
-  server: 45.221.98.11
-  port: 11777
+  server: 156.225.88.93
+  port: 23778
   password: dongtaiwang.com
   client-fingerprint: chrome
   udp: true
@@ -181,19 +181,6 @@ proxies:
   - h2
   - http/1.1
   skip-cert-verify: true
-- name: Unknown_tuic_122
-  server: 5.178.101.117
-  port: 30006
-  type: tuic
-  uuid: 36106e0f-4d9a-470b-a3fd-535f3b7a1e92
-  password: dongtaiwang.com
-  sni: www.microsoft.com
-  alpn:
-  - h3
-  request-timeout: 8000
-  udp-relay-mode: native
-  skip-cert-verify: true
-  congestion-controller: bbr
 - name: Unknown_tuic_131
   server: 62.210.24.143
   port: 33888
@@ -236,8 +223,8 @@ proxies:
   skip-cert-verify: true
 - name: Unknown_anytls_161
   type: anytls
-  server: 45.221.98.11
-  port: 11777
+  server: 156.225.88.93
+  port: 23778
   password: dongtaiwang.com
   client-fingerprint: chrome
   udp: true
@@ -248,19 +235,6 @@ proxies:
   - h2
   - http/1.1
   skip-cert-verify: true
-- name: Unknown_tuic_162
-  server: 5.178.101.117
-  port: 30006
-  type: tuic
-  uuid: 36106e0f-4d9a-470b-a3fd-535f3b7a1e92
-  password: dongtaiwang.com
-  sni: www.microsoft.com
-  alpn:
-  - h3
-  request-timeout: 8000
-  udp-relay-mode: native
-  skip-cert-verify: true
-  congestion-controller: bbr
 - name: Unknown_tuic_171
   server: 62.210.24.143
   port: 33888
@@ -464,12 +438,10 @@ proxy-groups:
   - Unknown_hysteria_101
   - Unknown_hysteria_111
   - Unknown_anytls_121
-  - Unknown_tuic_122
   - Unknown_tuic_131
   - Unknown_tuic_141
   - Unknown_anytls_151
   - Unknown_anytls_161
-  - Unknown_tuic_162
   - Unknown_tuic_171
   - Unknown_tuic_181
   - Unknown_anytls_191
@@ -504,12 +476,10 @@ proxy-groups:
   - Unknown_hysteria_101
   - Unknown_hysteria_111
   - Unknown_anytls_121
-  - Unknown_tuic_122
   - Unknown_tuic_131
   - Unknown_tuic_141
   - Unknown_anytls_151
   - Unknown_anytls_161
-  - Unknown_tuic_162
   - Unknown_tuic_171
   - Unknown_tuic_181
   - Unknown_anytls_191

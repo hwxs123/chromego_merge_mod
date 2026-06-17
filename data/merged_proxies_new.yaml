@@ -181,19 +181,15 @@ proxies:
   - h2
   - http/1.1
   skip-cert-verify: true
-- name: Unknown_tuic_131
-  server: 62.210.24.143
-  port: 33888
-  type: tuic
-  uuid: 9adb384a-0f16-4501-a8f3-b6b2556fce87
+- name: Unknown_hysteria2_131
+  type: hysteria2
+  server: hy2.561891.xyz
+  port: 44356
   password: dongtaiwang.com
-  sni: bing.com
-  alpn:
-  - h3
-  request-timeout: 8000
-  udp-relay-mode: native
-  skip-cert-verify: true
-  congestion-controller: bbr
+  up: 11 Mbps
+  down: 55 Mbps
+  skip-cert-verify: false
+  sni: hy2.561891.xyz
 - name: Unknown_tuic_141
   server: 83.243.86.109
   port: 27947
@@ -235,19 +231,15 @@ proxies:
   - h2
   - http/1.1
   skip-cert-verify: true
-- name: Unknown_tuic_171
-  server: 62.210.24.143
-  port: 33888
-  type: tuic
-  uuid: 9adb384a-0f16-4501-a8f3-b6b2556fce87
+- name: Unknown_hysteria2_171
+  type: hysteria2
+  server: hy2.561891.xyz
+  port: 44356
   password: dongtaiwang.com
-  sni: bing.com
-  alpn:
-  - h3
-  request-timeout: 8000
-  udp-relay-mode: native
-  skip-cert-verify: true
-  congestion-controller: bbr
+  up: 11 Mbps
+  down: 55 Mbps
+  skip-cert-verify: false
+  sni: hy2.561891.xyz
 - name: Unknown_tuic_181
   server: 83.243.86.109
   port: 27947
@@ -438,11 +430,11 @@ proxy-groups:
   - Unknown_hysteria_101
   - Unknown_hysteria_111
   - Unknown_anytls_121
-  - Unknown_tuic_131
+  - Unknown_hysteria2_131
   - Unknown_tuic_141
   - Unknown_anytls_151
   - Unknown_anytls_161
-  - Unknown_tuic_171
+  - Unknown_hysteria2_171
   - Unknown_tuic_181
   - Unknown_anytls_191
   - Unknown_hy_0
@@ -476,11 +468,11 @@ proxy-groups:
   - Unknown_hysteria_101
   - Unknown_hysteria_111
   - Unknown_anytls_121
-  - Unknown_tuic_131
+  - Unknown_hysteria2_131
   - Unknown_tuic_141
   - Unknown_anytls_151
   - Unknown_anytls_161
-  - Unknown_tuic_171
+  - Unknown_hysteria2_171
   - Unknown_tuic_181
   - Unknown_anytls_191
   - Unknown_hy_0

@@ -27,11 +27,11 @@ dns:
 proxies:
 - name: Unknown_hysteria2_01
   type: hysteria2
-  server: 62.210.124.132
-  port: 64772
+  server: clash-ip1.934618.xyz
+  port: 18271
   password: github.com/Alvin9999-newpac/fanqiang
-  sni: bing.com
-  skip-cert-verify: true
+  sni: clash-ip1.934618.xyz
+  skip-cert-verify: false
   up: 11 Mbps
   down: 55 Mbps
 - name: Unknown_hysteria_11
@@ -98,11 +98,11 @@ proxies:
   down: 55 Mbps
 - name: Unknown_hysteria2_61
   type: hysteria2
-  server: 62.210.124.132
-  port: 64772
+  server: clash-ip1.934618.xyz
+  port: 18271
   password: github.com/Alvin9999-newpac/fanqiang
-  sni: bing.com
-  skip-cert-verify: true
+  sni: clash-ip1.934618.xyz
+  skip-cert-verify: false
   up: 11 Mbps
   down: 55 Mbps
 - name: Unknown_hysteria_71

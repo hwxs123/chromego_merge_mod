@@ -25,13 +25,16 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: Unknown_hysteria2_01
-  type: hysteria2
-  server: clash-ip1.934618.xyz
-  port: 18271
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: clash-ip1.934618.xyz
-  skip-cert-verify: false
+- name: Unknown_hysteria_01
+  type: hysteria
+  server: 62.210.70.191
+  port: 23556
+  auth-str: github.com/Alvin9999-newpac/fanqiang
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
   up: 11 Mbps
   down: 55 Mbps
 - name: Unknown_hysteria_11
@@ -96,13 +99,16 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_hysteria2_61
-  type: hysteria2
-  server: clash-ip1.934618.xyz
-  port: 18271
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: clash-ip1.934618.xyz
-  skip-cert-verify: false
+- name: Unknown_hysteria_61
+  type: hysteria
+  server: 62.210.70.191
+  port: 23556
+  auth-str: github.com/Alvin9999-newpac/fanqiang
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
   up: 11 Mbps
   down: 55 Mbps
 - name: Unknown_hysteria_71
@@ -253,9 +259,9 @@ proxies:
   skip-cert-verify: true
 - name: Unknown_hy_0
   type: hysteria
-  server: 5.83.129.153
-  port: 20088
-  ports: 20088
+  server: 5.83.129.90
+  port: 54177
+  ports: 54177
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -267,15 +273,15 @@ proxies:
   - h3
 - name: Unknown_hy_1
   type: hysteria
-  server: 5.83.129.153
-  port: 27626
-  ports: 27626
-  auth_str: github.com/Alvin9999-newpac/fanqiang
+  server: 5.83.129.90
+  port: 54177
+  ports: 54177
+  auth_str: dongtaiwang.com
   up: 1000
   down: 1000
   fast-open: true
   protocol: udp
-  sni: bing.com
+  sni: apple.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -309,9 +315,9 @@ proxies:
   - h3
 - name: Unknown_hy_4
   type: hysteria
-  server: 5.83.129.153
-  port: 20088
-  ports: 20088
+  server: 5.83.129.90
+  port: 54177
+  ports: 54177
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -323,15 +329,15 @@ proxies:
   - h3
 - name: Unknown_hy_5
   type: hysteria
-  server: 5.83.129.153
-  port: 27626
-  ports: 27626
-  auth_str: github.com/Alvin9999-newpac/fanqiang
+  server: 5.83.129.90
+  port: 54177
+  ports: 54177
+  auth_str: dongtaiwang.com
   up: 1000
   down: 1000
   fast-open: true
   protocol: udp
-  sni: bing.com
+  sni: apple.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -365,12 +371,12 @@ proxies:
   - h3
 - name: Unknown_hy2_0
   type: hysteria2
-  server: www.838491.xyz
-  port: 13377
-  password: dongtaiwang.com
+  server: 62.210.27.216
+  port: 60111
+  password: github.com/Alvin9999-newpac/fanqiang
   fast-open: true
-  sni: www.838491.xyz
-  skip-cert-verify: false
+  sni: bing.com
+  skip-cert-verify: true
 - name: Unknown_hy2_1
   type: hysteria2
   server: 62.210.147.2
@@ -381,12 +387,12 @@ proxies:
   skip-cert-verify: true
 - name: Unknown_hy2_4
   type: hysteria2
-  server: www.838491.xyz
-  port: 13377
-  password: dongtaiwang.com
+  server: 62.210.27.216
+  port: 60111
+  password: github.com/Alvin9999-newpac/fanqiang
   fast-open: true
-  sni: www.838491.xyz
-  skip-cert-verify: false
+  sni: bing.com
+  skip-cert-verify: true
 - name: Unknown_hy2_5
   type: hysteria2
   server: 62.210.147.2
@@ -401,13 +407,13 @@ proxy-groups:
   proxies:
   - 自动选择
   - DIRECT
-  - Unknown_hysteria2_01
+  - Unknown_hysteria_01
   - Unknown_hysteria_11
   - Unknown_tuic_21
   - Unknown_tuic_31
   - Unknown_hysteria_41
   - Unknown_hysteria_51
-  - Unknown_hysteria2_61
+  - Unknown_hysteria_61
   - Unknown_hysteria_71
   - Unknown_tuic_81
   - Unknown_tuic_91
@@ -439,13 +445,13 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - Unknown_hysteria2_01
+  - Unknown_hysteria_01
   - Unknown_hysteria_11
   - Unknown_tuic_21
   - Unknown_tuic_31
   - Unknown_hysteria_41
   - Unknown_hysteria_51
-  - Unknown_hysteria2_61
+  - Unknown_hysteria_61
   - Unknown_hysteria_71
   - Unknown_tuic_81
   - Unknown_tuic_91

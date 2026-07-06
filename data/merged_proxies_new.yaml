@@ -25,18 +25,20 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: Unknown_hysteria_01
-  type: hysteria
-  server: 62.210.70.191
-  port: 23556
-  auth-str: github.com/Alvin9999-newpac/fanqiang
+- name: Unknown_anytls_01
+  type: anytls
+  server: 198.200.57.154
+  port: 22556
+  password: github.com/Alvin9999-newpac/fanqiang
+  udp: true
+  idle-session-check-interval: 30
+  idle-session-timeout: 30
+  min-idle-session: 5
   sni: bing.com
-  skip-cert-verify: true
   alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
+  - h2
+  - http/1.1
+  skip-cert-verify: true
 - name: Unknown_hysteria_11
   type: hysteria
   server: 163.172.117.163
@@ -49,32 +51,30 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_tuic_21
-  server: 5.178.101.117
-  port: 30006
-  type: tuic
-  uuid: 36106e0f-4d9a-470b-a3fd-535f3b7a1e92
-  password: dongtaiwang.com
-  sni: www.microsoft.com
+- name: Unknown_hysteria_21
+  type: hysteria
+  server: 62.210.70.191
+  port: 23556
+  auth-str: github.com/Alvin9999-newpac/fanqiang
+  sni: bing.com
+  skip-cert-verify: true
   alpn:
   - h3
-  request-timeout: 8000
-  udp-relay-mode: native
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: Unknown_hysteria_31
+  type: hysteria
+  server: 62.210.70.191
+  port: 23556
+  auth-str: github.com/Alvin9999-newpac/fanqiang
+  sni: bing.com
   skip-cert-verify: true
-  congestion-controller: bbr
-- name: Unknown_tuic_31
-  server: 5.178.101.117
-  port: 30006
-  type: tuic
-  uuid: 36106e0f-4d9a-470b-a3fd-535f3b7a1e92
-  password: dongtaiwang.com
-  sni: www.microsoft.com
   alpn:
   - h3
-  request-timeout: 8000
-  udp-relay-mode: native
-  skip-cert-verify: true
-  congestion-controller: bbr
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 - name: Unknown_hysteria_41
   type: hysteria
   server: 2a14:7584:d097::a
@@ -99,18 +99,20 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_hysteria_61
-  type: hysteria
-  server: 62.210.70.191
-  port: 23556
-  auth-str: github.com/Alvin9999-newpac/fanqiang
+- name: Unknown_anytls_61
+  type: anytls
+  server: 198.200.57.154
+  port: 22556
+  password: github.com/Alvin9999-newpac/fanqiang
+  udp: true
+  idle-session-check-interval: 30
+  idle-session-timeout: 30
+  min-idle-session: 5
   sni: bing.com
-  skip-cert-verify: true
   alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
+  - h2
+  - http/1.1
+  skip-cert-verify: true
 - name: Unknown_hysteria_71
   type: hysteria
   server: 163.172.117.163
@@ -123,32 +125,30 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_tuic_81
-  server: 5.178.101.117
-  port: 30006
-  type: tuic
-  uuid: 36106e0f-4d9a-470b-a3fd-535f3b7a1e92
-  password: dongtaiwang.com
-  sni: www.microsoft.com
+- name: Unknown_hysteria_81
+  type: hysteria
+  server: 62.210.70.191
+  port: 23556
+  auth-str: github.com/Alvin9999-newpac/fanqiang
+  sni: bing.com
+  skip-cert-verify: true
   alpn:
   - h3
-  request-timeout: 8000
-  udp-relay-mode: native
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: Unknown_hysteria_91
+  type: hysteria
+  server: 62.210.70.191
+  port: 23556
+  auth-str: github.com/Alvin9999-newpac/fanqiang
+  sni: bing.com
   skip-cert-verify: true
-  congestion-controller: bbr
-- name: Unknown_tuic_91
-  server: 5.178.101.117
-  port: 30006
-  type: tuic
-  uuid: 36106e0f-4d9a-470b-a3fd-535f3b7a1e92
-  password: dongtaiwang.com
-  sni: www.microsoft.com
   alpn:
   - h3
-  request-timeout: 8000
-  udp-relay-mode: native
-  skip-cert-verify: true
-  congestion-controller: bbr
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 - name: Unknown_hysteria_101
   type: hysteria
   server: 2a14:7584:d097::a
@@ -259,29 +259,29 @@ proxies:
   skip-cert-verify: true
 - name: Unknown_hy_0
   type: hysteria
-  server: 5.83.129.90
-  port: 54177
-  ports: 54177
-  auth_str: dongtaiwang.com
+  server: 62.210.70.191
+  port: 23556
+  ports: 23556
+  auth_str: github.com/Alvin9999-newpac/fanqiang
   up: 1000
   down: 1000
   fast-open: true
   protocol: udp
-  sni: apple.com
+  sni: bing.com
   skip-cert-verify: true
   alpn:
   - h3
 - name: Unknown_hy_1
   type: hysteria
-  server: 5.83.129.90
-  port: 54177
-  ports: 54177
-  auth_str: dongtaiwang.com
+  server: 62.210.70.191
+  port: 23556
+  ports: 23556
+  auth_str: github.com/Alvin9999-newpac/fanqiang
   up: 1000
   down: 1000
   fast-open: true
   protocol: udp
-  sni: apple.com
+  sni: bing.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -315,29 +315,29 @@ proxies:
   - h3
 - name: Unknown_hy_4
   type: hysteria
-  server: 5.83.129.90
-  port: 54177
-  ports: 54177
-  auth_str: dongtaiwang.com
+  server: 62.210.70.191
+  port: 23556
+  ports: 23556
+  auth_str: github.com/Alvin9999-newpac/fanqiang
   up: 1000
   down: 1000
   fast-open: true
   protocol: udp
-  sni: apple.com
+  sni: bing.com
   skip-cert-verify: true
   alpn:
   - h3
 - name: Unknown_hy_5
   type: hysteria
-  server: 5.83.129.90
-  port: 54177
-  ports: 54177
-  auth_str: dongtaiwang.com
+  server: 62.210.70.191
+  port: 23556
+  ports: 23556
+  auth_str: github.com/Alvin9999-newpac/fanqiang
   up: 1000
   down: 1000
   fast-open: true
   protocol: udp
-  sni: apple.com
+  sni: bing.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -407,16 +407,16 @@ proxy-groups:
   proxies:
   - 自动选择
   - DIRECT
-  - Unknown_hysteria_01
+  - Unknown_anytls_01
   - Unknown_hysteria_11
-  - Unknown_tuic_21
-  - Unknown_tuic_31
+  - Unknown_hysteria_21
+  - Unknown_hysteria_31
   - Unknown_hysteria_41
   - Unknown_hysteria_51
-  - Unknown_hysteria_61
+  - Unknown_anytls_61
   - Unknown_hysteria_71
-  - Unknown_tuic_81
-  - Unknown_tuic_91
+  - Unknown_hysteria_81
+  - Unknown_hysteria_91
   - Unknown_hysteria_101
   - Unknown_hysteria_111
   - Unknown_anytls_121
@@ -445,16 +445,16 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - Unknown_hysteria_01
+  - Unknown_anytls_01
   - Unknown_hysteria_11
-  - Unknown_tuic_21
-  - Unknown_tuic_31
+  - Unknown_hysteria_21
+  - Unknown_hysteria_31
   - Unknown_hysteria_41
   - Unknown_hysteria_51
-  - Unknown_hysteria_61
+  - Unknown_anytls_61
   - Unknown_hysteria_71
-  - Unknown_tuic_81
-  - Unknown_tuic_91
+  - Unknown_hysteria_81
+  - Unknown_hysteria_91
   - Unknown_hysteria_101
   - Unknown_hysteria_111
   - Unknown_anytls_121

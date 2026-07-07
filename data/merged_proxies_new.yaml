@@ -25,20 +25,18 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: Unknown_anytls_01
-  type: anytls
-  server: 198.200.57.154
-  port: 22556
-  password: github.com/Alvin9999-newpac/fanqiang
-  udp: true
-  idle-session-check-interval: 30
-  idle-session-timeout: 30
-  min-idle-session: 5
+- name: Unknown_hysteria_01
+  type: hysteria
+  server: 62.210.70.191
+  port: 23556
+  auth-str: github.com/Alvin9999-newpac/fanqiang
   sni: bing.com
-  alpn:
-  - h2
-  - http/1.1
   skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 - name: Unknown_hysteria_11
   type: hysteria
   server: 163.172.117.163
@@ -99,20 +97,18 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_anytls_61
-  type: anytls
-  server: 198.200.57.154
-  port: 22556
-  password: github.com/Alvin9999-newpac/fanqiang
-  udp: true
-  idle-session-check-interval: 30
-  idle-session-timeout: 30
-  min-idle-session: 5
+- name: Unknown_hysteria_61
+  type: hysteria
+  server: 62.210.70.191
+  port: 23556
+  auth-str: github.com/Alvin9999-newpac/fanqiang
   sni: bing.com
-  alpn:
-  - h2
-  - http/1.1
   skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 - name: Unknown_hysteria_71
   type: hysteria
   server: 163.172.117.163
@@ -407,13 +403,13 @@ proxy-groups:
   proxies:
   - 自动选择
   - DIRECT
-  - Unknown_anytls_01
+  - Unknown_hysteria_01
   - Unknown_hysteria_11
   - Unknown_hysteria_21
   - Unknown_hysteria_31
   - Unknown_hysteria_41
   - Unknown_hysteria_51
-  - Unknown_anytls_61
+  - Unknown_hysteria_61
   - Unknown_hysteria_71
   - Unknown_hysteria_81
   - Unknown_hysteria_91
@@ -445,13 +441,13 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-  - Unknown_anytls_01
+  - Unknown_hysteria_01
   - Unknown_hysteria_11
   - Unknown_hysteria_21
   - Unknown_hysteria_31
   - Unknown_hysteria_41
   - Unknown_hysteria_51
-  - Unknown_anytls_61
+  - Unknown_hysteria_61
   - Unknown_hysteria_71
   - Unknown_hysteria_81
   - Unknown_hysteria_91

@@ -367,7 +367,7 @@ proxies:
   - h3
 - name: Unknown_hy2_0
   type: hysteria2
-  server: 62.210.27.216
+  server: 62.210.7.139
   port: 60111
   password: github.com/Alvin9999-newpac/fanqiang
   fast-open: true
@@ -383,7 +383,7 @@ proxies:
   skip-cert-verify: true
 - name: Unknown_hy2_4
   type: hysteria2
-  server: 62.210.27.216
+  server: 62.210.7.139
   port: 60111
   password: github.com/Alvin9999-newpac/fanqiang
   fast-open: true

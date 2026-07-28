@@ -177,9 +177,9 @@ proxies:
   sni: anytls.864106.xyz
 - name: Unknown_hysteria_131
   type: hysteria
-  server: 163.172.117.163
-  port: 36699
-  auth-str: dongtaiwang.com
+  server: 198.200.57.142
+  port: 22335
+  auth-str: github.com/Alvin9999-newpac/fanqiang
   sni: bing.com
   skip-cert-verify: true
   alpn:
@@ -187,19 +187,15 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_tuic_141
-  server: 83.243.86.109
-  port: 27947
-  type: tuic
-  uuid: 261d95d4-73c0-4c33-957a-04b6d407bea2
-  password: 261d95d4-73c0-4c33-957a-04b6d407bea2
-  sni: bing.com
-  alpn:
-  - h3
-  request-timeout: 8000
-  udp-relay-mode: native
-  skip-cert-verify: true
-  congestion-controller: bbr
+- name: Unknown_mieru_141
+  type: mieru
+  server: 198.200.57.142
+  port: 33556
+  transport: TCP
+  username: Alvin9999-newpac
+  password: github.com/Alvin9999-newpac/fanqiang
+  udp: true
+  multiplexing: MULTIPLEXING_LOW
 - name: Unknown_anytls_151
   type: anytls
   server: fan2.856098.xyz
@@ -222,9 +218,9 @@ proxies:
   sni: anytls.864106.xyz
 - name: Unknown_hysteria_171
   type: hysteria
-  server: 163.172.117.163
-  port: 36699
-  auth-str: dongtaiwang.com
+  server: 198.200.57.142
+  port: 22335
+  auth-str: github.com/Alvin9999-newpac/fanqiang
   sni: bing.com
   skip-cert-verify: true
   alpn:
@@ -232,19 +228,15 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_tuic_181
-  server: 83.243.86.109
-  port: 27947
-  type: tuic
-  uuid: 261d95d4-73c0-4c33-957a-04b6d407bea2
-  password: 261d95d4-73c0-4c33-957a-04b6d407bea2
-  sni: bing.com
-  alpn:
-  - h3
-  request-timeout: 8000
-  udp-relay-mode: native
-  skip-cert-verify: true
-  congestion-controller: bbr
+- name: Unknown_mieru_181
+  type: mieru
+  server: 198.200.57.142
+  port: 33556
+  transport: TCP
+  username: Alvin9999-newpac
+  password: github.com/Alvin9999-newpac/fanqiang
+  udp: true
+  multiplexing: MULTIPLEXING_LOW
 - name: Unknown_anytls_191
   type: anytls
   server: fan2.856098.xyz
@@ -423,11 +415,11 @@ proxy-groups:
   - Unknown_hysteria_111
   - Unknown_anytls_121
   - Unknown_hysteria_131
-  - Unknown_tuic_141
+  - Unknown_mieru_141
   - Unknown_anytls_151
   - Unknown_anytls_161
   - Unknown_hysteria_171
-  - Unknown_tuic_181
+  - Unknown_mieru_181
   - Unknown_anytls_191
   - Unknown_hy_0
   - Unknown_hy_1
@@ -461,11 +453,11 @@ proxy-groups:
   - Unknown_hysteria_111
   - Unknown_anytls_121
   - Unknown_hysteria_131
-  - Unknown_tuic_141
+  - Unknown_mieru_141
   - Unknown_anytls_151
   - Unknown_anytls_161
   - Unknown_hysteria_171
-  - Unknown_tuic_181
+  - Unknown_mieru_181
   - Unknown_anytls_191
   - Unknown_hy_0
   - Unknown_hy_1

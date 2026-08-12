@@ -196,20 +196,18 @@ proxies:
   password: github.com/Alvin9999-newpac/fanqiang
   udp: true
   multiplexing: MULTIPLEXING_LOW
-- name: Unknown_anytls_151
-  type: anytls
-  server: fan2.856098.xyz
-  port: 8443
-  password: dongtaiwang.com
-  client-fingerprint: chrome
-  udp: true
-  idle-session-check-interval: 30
-  idle-session-timeout: 30
-  min-idle-session: 0
+- name: Unknown_hysteria_151
+  type: hysteria
+  server: tw-25.497489.xyz
+  port: 10099
+  auth-str: github.com/Alvin9999-newpac/fanqiang
+  sni: tw-25.497489.xyz
+  skip-cert-verify: false
   alpn:
-  - h2
-  - http/1.1
-  skip-cert-verify: true
+  - h3
+  protocol: udp
+  up: 20 Mbps
+  down: 20 Mbps
 - name: Unknown_anytls_161
   type: anytls
   server: anytls2.864106.xyz
@@ -237,20 +235,18 @@ proxies:
   password: github.com/Alvin9999-newpac/fanqiang
   udp: true
   multiplexing: MULTIPLEXING_LOW
-- name: Unknown_anytls_191
-  type: anytls
-  server: fan2.856098.xyz
-  port: 8443
-  password: dongtaiwang.com
-  client-fingerprint: chrome
-  udp: true
-  idle-session-check-interval: 30
-  idle-session-timeout: 30
-  min-idle-session: 0
+- name: Unknown_hysteria_191
+  type: hysteria
+  server: tw-25.497489.xyz
+  port: 10099
+  auth-str: github.com/Alvin9999-newpac/fanqiang
+  sni: tw-25.497489.xyz
+  skip-cert-verify: false
   alpn:
-  - h2
-  - http/1.1
-  skip-cert-verify: true
+  - h3
+  protocol: udp
+  up: 20 Mbps
+  down: 20 Mbps
 - name: Unknown_hy_0
   type: hysteria
   server: 62.210.70.191
@@ -384,11 +380,11 @@ proxy-groups:
   - Unknown_anytls_121
   - Unknown_hysteria_131
   - Unknown_mieru_141
-  - Unknown_anytls_151
+  - Unknown_hysteria_151
   - Unknown_anytls_161
   - Unknown_hysteria_171
   - Unknown_mieru_181
-  - Unknown_anytls_191
+  - Unknown_hysteria_191
   - Unknown_hy_0
   - Unknown_hy_1
   - Unknown_hy_2
@@ -418,11 +414,11 @@ proxy-groups:
   - Unknown_anytls_121
   - Unknown_hysteria_131
   - Unknown_mieru_141
-  - Unknown_anytls_151
+  - Unknown_hysteria_151
   - Unknown_anytls_161
   - Unknown_hysteria_171
   - Unknown_mieru_181
-  - Unknown_anytls_191
+  - Unknown_hysteria_191
   - Unknown_hy_0
   - Unknown_hy_1
   - Unknown_hy_2

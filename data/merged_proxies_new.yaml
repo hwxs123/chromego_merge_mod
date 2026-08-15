@@ -247,6 +247,30 @@ proxies:
   protocol: udp
   up: 20 Mbps
   down: 20 Mbps
+- name: Unknown_hysteria_201
+  type: hysteria
+  server: 62.210.70.191
+  port: 23556
+  auth-str: github.com/Alvin9999-newpac/fanqiang
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
+- name: Unknown_hysteria_211
+  type: hysteria
+  server: 62.210.70.191
+  port: 23556
+  auth-str: github.com/Alvin9999-newpac/fanqiang
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 - name: Unknown_hy_0
   type: hysteria
   server: 62.210.70.191
@@ -385,6 +409,8 @@ proxy-groups:
   - Unknown_hysteria_171
   - Unknown_mieru_181
   - Unknown_hysteria_191
+  - Unknown_hysteria_201
+  - Unknown_hysteria_211
   - Unknown_hy_0
   - Unknown_hy_1
   - Unknown_hy_2
@@ -419,6 +445,8 @@ proxy-groups:
   - Unknown_hysteria_171
   - Unknown_mieru_181
   - Unknown_hysteria_191
+  - Unknown_hysteria_201
+  - Unknown_hysteria_211
   - Unknown_hy_0
   - Unknown_hy_1
   - Unknown_hy_2

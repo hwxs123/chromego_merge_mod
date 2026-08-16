@@ -327,20 +327,6 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: Unknown_hy_4
-  type: hysteria
-  server: 62.210.70.191
-  port: 23556
-  ports: 23556
-  auth_str: github.com/Alvin9999-newpac/fanqiang
-  up: 1000
-  down: 1000
-  fast-open: true
-  protocol: udp
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
 - name: Unknown_hy_5
   type: hysteria
   server: 62.210.70.191
@@ -415,7 +401,6 @@ proxy-groups:
   - Unknown_hy_1
   - Unknown_hy_2
   - Unknown_hy_3
-  - Unknown_hy_4
   - Unknown_hy_5
   - Unknown_hy_6
   - Unknown_hy_7
@@ -451,7 +436,6 @@ proxy-groups:
   - Unknown_hy_1
   - Unknown_hy_2
   - Unknown_hy_3
-  - Unknown_hy_4
   - Unknown_hy_5
   - Unknown_hy_6
   - Unknown_hy_7

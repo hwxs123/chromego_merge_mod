@@ -109,31 +109,7 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_hysteria_71
-  type: hysteria
-  server: 163.172.117.163
-  port: 36699
-  auth-str: dongtaiwang.com
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
 - name: Unknown_hysteria_81
-  type: hysteria
-  server: 62.210.70.191
-  port: 23556
-  auth-str: github.com/Alvin9999-newpac/fanqiang
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: Unknown_hysteria_91
   type: hysteria
   server: 62.210.70.191
   port: 23556
@@ -226,51 +202,6 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_mieru_181
-  type: mieru
-  server: 198.200.57.152
-  port: 33556
-  transport: TCP
-  username: Alvin9999-newpac
-  password: github.com/Alvin9999-newpac/fanqiang
-  udp: true
-  multiplexing: MULTIPLEXING_LOW
-- name: Unknown_hysteria_191
-  type: hysteria
-  server: tw-25.497489.xyz
-  port: 10099
-  auth-str: github.com/Alvin9999-newpac/fanqiang
-  sni: tw-25.497489.xyz
-  skip-cert-verify: false
-  alpn:
-  - h3
-  protocol: udp
-  up: 20 Mbps
-  down: 20 Mbps
-- name: Unknown_hysteria_201
-  type: hysteria
-  server: 62.210.70.191
-  port: 23556
-  auth-str: github.com/Alvin9999-newpac/fanqiang
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: Unknown_hysteria_211
-  type: hysteria
-  server: 62.210.70.191
-  port: 23556
-  auth-str: github.com/Alvin9999-newpac/fanqiang
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
 - name: Unknown_hy_0
   type: hysteria
   server: 62.210.70.191
@@ -327,20 +258,6 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: Unknown_hy_4
-  type: hysteria
-  server: 62.210.70.191
-  port: 23556
-  ports: 23556
-  auth_str: github.com/Alvin9999-newpac/fanqiang
-  up: 1000
-  down: 1000
-  fast-open: true
-  protocol: udp
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
 - name: Unknown_hy_5
   type: hysteria
   server: 62.210.70.191
@@ -369,20 +286,6 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: Unknown_hy_7
-  type: hysteria
-  server: 5.83.129.90
-  port: 54177
-  ports: 54177
-  auth_str: dongtaiwang.com
-  up: 1000
-  down: 1000
-  fast-open: true
-  protocol: udp
-  sni: apple.com
-  skip-cert-verify: true
-  alpn:
-  - h3
 proxy-groups:
 - name: 节点选择
   type: select
@@ -396,9 +299,7 @@ proxy-groups:
   - Unknown_hysteria_41
   - Unknown_hysteria_51
   - Unknown_hysteria_61
-  - Unknown_hysteria_71
   - Unknown_hysteria_81
-  - Unknown_hysteria_91
   - Unknown_hysteria_101
   - Unknown_hysteria_111
   - Unknown_anytls_121
@@ -407,18 +308,12 @@ proxy-groups:
   - Unknown_hysteria_151
   - Unknown_anytls_161
   - Unknown_hysteria_171
-  - Unknown_mieru_181
-  - Unknown_hysteria_191
-  - Unknown_hysteria_201
-  - Unknown_hysteria_211
   - Unknown_hy_0
   - Unknown_hy_1
   - Unknown_hy_2
   - Unknown_hy_3
-  - Unknown_hy_4
   - Unknown_hy_5
   - Unknown_hy_6
-  - Unknown_hy_7
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
@@ -432,9 +327,7 @@ proxy-groups:
   - Unknown_hysteria_41
   - Unknown_hysteria_51
   - Unknown_hysteria_61
-  - Unknown_hysteria_71
   - Unknown_hysteria_81
-  - Unknown_hysteria_91
   - Unknown_hysteria_101
   - Unknown_hysteria_111
   - Unknown_anytls_121
@@ -443,18 +336,12 @@ proxy-groups:
   - Unknown_hysteria_151
   - Unknown_anytls_161
   - Unknown_hysteria_171
-  - Unknown_mieru_181
-  - Unknown_hysteria_191
-  - Unknown_hysteria_201
-  - Unknown_hysteria_211
   - Unknown_hy_0
   - Unknown_hy_1
   - Unknown_hy_2
   - Unknown_hy_3
-  - Unknown_hy_4
   - Unknown_hy_5
   - Unknown_hy_6
-  - Unknown_hy_7
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT

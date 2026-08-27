@@ -49,36 +49,12 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_hysteria_21
-  type: hysteria
-  server: 62.210.70.191
-  port: 23556
-  auth-str: github.com/Alvin9999-newpac/fanqiang
-  sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
 - name: Unknown_hysteria_31
   type: hysteria
   server: 62.210.70.191
   port: 23556
   auth-str: github.com/Alvin9999-newpac/fanqiang
   sni: bing.com
-  skip-cert-verify: true
-  alpn:
-  - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: Unknown_hysteria_41
-  type: hysteria
-  server: 2a14:7584:d097::a
-  port: 54177
-  auth-str: dongtaiwang.com
-  sni: apple.com
   skip-cert-verify: true
   alpn:
   - h3
@@ -169,12 +145,6 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_anytls_121
-  type: anytls
-  server: anytls2.864106.xyz
-  port: 19000
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: anytls2.864106.xyz
 - name: Unknown_hysteria_131
   type: hysteria
   server: 198.200.57.142
@@ -196,18 +166,6 @@ proxies:
   password: github.com/Alvin9999-newpac/fanqiang
   udp: true
   multiplexing: MULTIPLEXING_LOW
-- name: Unknown_hysteria_151
-  type: hysteria
-  server: tw-25.497489.xyz
-  port: 10099
-  auth-str: github.com/Alvin9999-newpac/fanqiang
-  sni: tw-25.497489.xyz
-  skip-cert-verify: false
-  alpn:
-  - h3
-  protocol: udp
-  up: 20 Mbps
-  down: 20 Mbps
 - name: Unknown_anytls_161
   type: anytls
   server: anytls2.864106.xyz
@@ -391,9 +349,7 @@ proxy-groups:
   - DIRECT
   - Unknown_hysteria_01
   - Unknown_hysteria_11
-  - Unknown_hysteria_21
   - Unknown_hysteria_31
-  - Unknown_hysteria_41
   - Unknown_hysteria_51
   - Unknown_hysteria_61
   - Unknown_hysteria_71
@@ -401,10 +357,8 @@ proxy-groups:
   - Unknown_hysteria_91
   - Unknown_hysteria_101
   - Unknown_hysteria_111
-  - Unknown_anytls_121
   - Unknown_hysteria_131
   - Unknown_mieru_141
-  - Unknown_hysteria_151
   - Unknown_anytls_161
   - Unknown_hysteria_171
   - Unknown_mieru_181
@@ -427,9 +381,7 @@ proxy-groups:
   proxies:
   - Unknown_hysteria_01
   - Unknown_hysteria_11
-  - Unknown_hysteria_21
   - Unknown_hysteria_31
-  - Unknown_hysteria_41
   - Unknown_hysteria_51
   - Unknown_hysteria_61
   - Unknown_hysteria_71
@@ -437,10 +389,8 @@ proxy-groups:
   - Unknown_hysteria_91
   - Unknown_hysteria_101
   - Unknown_hysteria_111
-  - Unknown_anytls_121
   - Unknown_hysteria_131
   - Unknown_mieru_141
-  - Unknown_hysteria_151
   - Unknown_anytls_161
   - Unknown_hysteria_171
   - Unknown_mieru_181

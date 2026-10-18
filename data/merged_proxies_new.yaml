@@ -273,7 +273,7 @@ proxies:
   down: 55 Mbps
 - name: Unknown_hy_0
   type: hysteria
-  server: 107.149.207.185
+  server: 137.175.82.44
   port: 443
   ports: 443
   auth_str: dongtaiwang.com
@@ -281,7 +281,7 @@ proxies:
   down: 1000
   fast-open: true
   protocol: udp
-  sni: www.bing.com
+  sni: bing.com
   skip-cert-verify: true
   alpn:
   - h3

@@ -27,7 +27,7 @@ dns:
 proxies:
 - name: Unknown_hysteria_01
   type: hysteria
-  server: 62.210.70.191
+  server: 62.210.28.175
   port: 24667
   auth-str: dongtaiwang.com
   sni: bing.com
@@ -99,7 +99,7 @@ proxies:
   down: 55 Mbps
 - name: Unknown_hysteria_61
   type: hysteria
-  server: 62.210.70.191
+  server: 62.210.28.175
   port: 24667
   auth-str: dongtaiwang.com
   sni: bing.com
@@ -261,7 +261,7 @@ proxies:
   down: 20 Mbps
 - name: Unknown_hysteria_201
   type: hysteria
-  server: 62.210.70.191
+  server: 62.210.28.175
   port: 24667
   auth-str: dongtaiwang.com
   sni: bing.com

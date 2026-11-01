@@ -171,16 +171,16 @@ proxies:
   down: 55 Mbps
 - name: Unknown_hysteria_121
   type: hysteria
-  server: tw-25.497489.xyz
-  port: 10099
-  auth-str: github.com/Alvin9999-newpac/fanqiang
-  sni: tw-25.497489.xyz
-  skip-cert-verify: false
+  server: 163.172.117.163
+  port: 36699
+  auth-str: dongtaiwang.com
+  sni: bing.com
+  skip-cert-verify: true
   alpn:
   - h3
   protocol: udp
-  up: 20 Mbps
-  down: 20 Mbps
+  up: 11 Mbps
+  down: 55 Mbps
 - name: Unknown_hysteria_131
   type: hysteria
   server: 198.200.57.142
@@ -216,16 +216,16 @@ proxies:
   down: 20 Mbps
 - name: Unknown_hysteria_161
   type: hysteria
-  server: tw-25.497489.xyz
-  port: 10099
-  auth-str: github.com/Alvin9999-newpac/fanqiang
-  sni: tw-25.497489.xyz
-  skip-cert-verify: false
+  server: 163.172.117.163
+  port: 36699
+  auth-str: dongtaiwang.com
+  sni: bing.com
+  skip-cert-verify: true
   alpn:
   - h3
   protocol: udp
-  up: 20 Mbps
-  down: 20 Mbps
+  up: 11 Mbps
+  down: 55 Mbps
 - name: Unknown_hysteria_171
   type: hysteria
   server: 198.200.57.142

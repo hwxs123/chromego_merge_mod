@@ -259,6 +259,18 @@ proxies:
   protocol: udp
   up: 20 Mbps
   down: 20 Mbps
+- name: Unknown_hysteria_201
+  type: hysteria
+  server: 62.210.28.175
+  port: 24667
+  auth-str: dongtaiwang.com
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  protocol: udp
+  up: 11 Mbps
+  down: 55 Mbps
 - name: Unknown_hysteria_211
   type: hysteria
   server: 62.210.70.191
@@ -327,6 +339,34 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
+- name: Unknown_hy_4
+  type: hysteria
+  server: 137.175.82.44
+  port: 20022
+  ports: 20022
+  auth_str: dongtaiwang.com
+  up: 1000
+  down: 1000
+  fast-open: true
+  protocol: udp
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: Unknown_hy_5
+  type: hysteria
+  server: 137.175.82.44
+  port: 443
+  ports: 443
+  auth_str: dongtaiwang.com
+  up: 1000
+  down: 1000
+  fast-open: true
+  protocol: udp
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
 - name: Unknown_hy_6
   type: hysteria
   server: 5.83.129.90
@@ -381,11 +421,14 @@ proxy-groups:
   - Unknown_hysteria_171
   - Unknown_mieru_181
   - Unknown_hysteria_191
+  - Unknown_hysteria_201
   - Unknown_hysteria_211
   - Unknown_hy_0
   - Unknown_hy_1
   - Unknown_hy_2
   - Unknown_hy_3
+  - Unknown_hy_4
+  - Unknown_hy_5
   - Unknown_hy_6
   - Unknown_hy_7
 - name: 自动选择
@@ -414,11 +457,14 @@ proxy-groups:
   - Unknown_hysteria_171
   - Unknown_mieru_181
   - Unknown_hysteria_191
+  - Unknown_hysteria_201
   - Unknown_hysteria_211
   - Unknown_hy_0
   - Unknown_hy_1
   - Unknown_hy_2
   - Unknown_hy_3
+  - Unknown_hy_4
+  - Unknown_hy_5
   - Unknown_hy_6
   - Unknown_hy_7
 rules:

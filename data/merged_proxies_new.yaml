@@ -341,7 +341,7 @@ proxies:
   - h3
 - name: Unknown_hy_4
   type: hysteria
-  server: 137.175.82.44
+  server: 137.175.82.42
   port: 20022
   ports: 20022
   auth_str: dongtaiwang.com
@@ -355,9 +355,9 @@ proxies:
   - h3
 - name: Unknown_hy_5
   type: hysteria
-  server: 137.175.82.44
-  port: 443
-  ports: 443
+  server: 137.175.82.42
+  port: 20022
+  ports: 20022
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000

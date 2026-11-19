@@ -171,7 +171,7 @@ proxies:
   down: 55 Mbps
 - name: Unknown_hysteria_121
   type: hysteria
-  server: 38.6.222.130
+  server: 38.6.222.131
   port: 11008
   auth-str: dongtaiwang.com
   sni: bing.com
@@ -183,9 +183,9 @@ proxies:
   down: 55 Mbps
 - name: Unknown_hysteria_131
   type: hysteria
-  server: 198.200.57.142
-  port: 22335
-  auth-str: github.com/Alvin9999-newpac/fanqiang
+  server: 38.6.222.132
+  port: 11008
+  auth-str: dongtaiwang.com
   sni: bing.com
   skip-cert-verify: true
   alpn:
@@ -216,7 +216,7 @@ proxies:
   down: 20 Mbps
 - name: Unknown_hysteria_161
   type: hysteria
-  server: 38.6.222.130
+  server: 38.6.222.131
   port: 11008
   auth-str: dongtaiwang.com
   sni: bing.com
@@ -228,7 +228,7 @@ proxies:
   down: 55 Mbps
 - name: Unknown_hysteria_171
   type: hysteria
-  server: 38.6.222.130
+  server: 38.6.222.132
   port: 11008
   auth-str: dongtaiwang.com
   sni: bing.com
@@ -285,7 +285,7 @@ proxies:
   down: 55 Mbps
 - name: Unknown_hy_0
   type: hysteria
-  server: 137.175.82.44
+  server: 137.175.82.41
   port: 20022
   ports: 20022
   auth_str: dongtaiwang.com
@@ -341,7 +341,7 @@ proxies:
   - h3
 - name: Unknown_hy_4
   type: hysteria
-  server: 137.175.82.42
+  server: 137.175.82.41
   port: 20022
   ports: 20022
   auth_str: dongtaiwang.com

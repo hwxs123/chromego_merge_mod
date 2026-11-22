@@ -37,66 +37,56 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_hysteria_11
-  type: hysteria
-  server: 62.210.124.132
-  port: 24667
-  auth-str: dongtaiwang.com
-  sni: bing.com
+- name: Unknown_hysteria2_11
+  type: hysteria2
+  server: 2001:bc8:32d7:17b::10
+  port: 22000
+  password: dongtaiwang.com
+  sni: www.microsoft.com
   skip-cert-verify: true
   alpn:
   - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: Unknown_hysteria_21
-  type: hysteria
-  server: 62.210.70.191
-  port: 23556
-  auth-str: github.com/Alvin9999-newpac/fanqiang
-  sni: bing.com
+  udp: true
+- name: Unknown_hysteria2_21
+  type: hysteria2
+  server: 2001:bc8:32d7:17b::11
+  port: 22000
+  password: dongtaiwang.com
+  sni: www.microsoft.com
   skip-cert-verify: true
   alpn:
   - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: Unknown_hysteria_31
-  type: hysteria
-  server: 62.210.70.191
-  port: 23556
-  auth-str: github.com/Alvin9999-newpac/fanqiang
-  sni: bing.com
+  udp: true
+- name: Unknown_hysteria2_31
+  type: hysteria2
+  server: 2001:bc8:32d7:17b::13
+  port: 22000
+  password: dongtaiwang.com
+  sni: www.microsoft.com
   skip-cert-verify: true
   alpn:
   - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: Unknown_hysteria_41
-  type: hysteria
-  server: 2a14:7584:d097::a
-  port: 54177
-  auth-str: dongtaiwang.com
-  sni: apple.com
+  udp: true
+- name: Unknown_hysteria2_41
+  type: hysteria2
+  server: 2001:bc8:32d7:17b::15
+  port: 22000
+  password: dongtaiwang.com
+  sni: www.microsoft.com
   skip-cert-verify: true
   alpn:
   - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: Unknown_hysteria_51
-  type: hysteria
-  server: 2a14:7584:d097::a
-  port: 54177
-  auth-str: dongtaiwang.com
-  sni: apple.com
+  udp: true
+- name: Unknown_hysteria2_51
+  type: hysteria2
+  server: 2001:bc8:32d7:17b::16
+  port: 22000
+  password: dongtaiwang.com
+  sni: www.microsoft.com
   skip-cert-verify: true
   alpn:
   - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
+  udp: true
 - name: Unknown_hysteria_61
   type: hysteria
   server: 62.210.124.132
@@ -109,66 +99,56 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_hysteria_71
-  type: hysteria
-  server: 62.210.124.132
-  port: 24667
-  auth-str: dongtaiwang.com
-  sni: bing.com
+- name: Unknown_hysteria2_71
+  type: hysteria2
+  server: 2001:bc8:32d7:17b::17
+  port: 22000
+  password: dongtaiwang.com
+  sni: www.microsoft.com
   skip-cert-verify: true
   alpn:
   - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: Unknown_hysteria_81
-  type: hysteria
-  server: 62.210.70.191
-  port: 23556
-  auth-str: github.com/Alvin9999-newpac/fanqiang
-  sni: bing.com
+  udp: true
+- name: Unknown_hysteria2_81
+  type: hysteria2
+  server: 2001:bc8:32d7:17b::17
+  port: 22000
+  password: dongtaiwang.com
+  sni: www.microsoft.com
   skip-cert-verify: true
   alpn:
   - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: Unknown_hysteria_91
-  type: hysteria
-  server: 62.210.70.191
-  port: 23556
-  auth-str: github.com/Alvin9999-newpac/fanqiang
-  sni: bing.com
+  udp: true
+- name: Unknown_hysteria2_91
+  type: hysteria2
+  server: 2001:bc8:32d7:17b::17
+  port: 22000
+  password: dongtaiwang.com
+  sni: www.microsoft.com
   skip-cert-verify: true
   alpn:
   - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: Unknown_hysteria_101
-  type: hysteria
-  server: 2a14:7584:d097::a
-  port: 54177
-  auth-str: dongtaiwang.com
-  sni: apple.com
+  udp: true
+- name: Unknown_hysteria2_101
+  type: hysteria2
+  server: 2001:bc8:32d7:17b::17
+  port: 22000
+  password: dongtaiwang.com
+  sni: www.microsoft.com
   skip-cert-verify: true
   alpn:
   - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
-- name: Unknown_hysteria_111
-  type: hysteria
-  server: 2a14:7584:d097::a
-  port: 54177
-  auth-str: dongtaiwang.com
-  sni: apple.com
+  udp: true
+- name: Unknown_hysteria2_111
+  type: hysteria2
+  server: 2001:bc8:32d7:17b::17
+  port: 22000
+  password: dongtaiwang.com
+  sni: www.microsoft.com
   skip-cert-verify: true
   alpn:
   - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
+  udp: true
 - name: Unknown_hysteria_121
   type: hysteria
   server: 38.6.222.131
@@ -193,27 +173,26 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_mieru_141
-  type: mieru
-  server: 198.200.57.152
-  port: 33556
-  transport: TCP
-  username: Alvin9999-newpac
-  password: github.com/Alvin9999-newpac/fanqiang
-  udp: true
-  multiplexing: MULTIPLEXING_LOW
-- name: Unknown_hysteria_151
-  type: hysteria
-  server: tw-25.497489.xyz
-  port: 10099
-  auth-str: github.com/Alvin9999-newpac/fanqiang
-  sni: tw-25.497489.xyz
-  skip-cert-verify: false
+- name: Unknown_hysteria2_141
+  type: hysteria2
+  server: 198.247.124.187
+  port: 23456
+  password: dongtaiwang.com
+  sni: www.bing.com
+  skip-cert-verify: true
   alpn:
   - h3
-  protocol: udp
-  up: 20 Mbps
-  down: 20 Mbps
+  udp: true
+- name: Unknown_hysteria2_151
+  type: hysteria2
+  server: 198.247.124.187
+  port: 23456
+  password: dongtaiwang.com
+  sni: www.bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  udp: true
 - name: Unknown_hysteria_161
   type: hysteria
   server: 38.6.222.131
@@ -238,27 +217,26 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_mieru_181
-  type: mieru
-  server: 198.200.57.152
-  port: 33556
-  transport: TCP
-  username: Alvin9999-newpac
-  password: github.com/Alvin9999-newpac/fanqiang
-  udp: true
-  multiplexing: MULTIPLEXING_LOW
-- name: Unknown_hysteria_191
-  type: hysteria
-  server: tw-25.497489.xyz
-  port: 10099
-  auth-str: github.com/Alvin9999-newpac/fanqiang
-  sni: tw-25.497489.xyz
-  skip-cert-verify: false
+- name: Unknown_hysteria2_181
+  type: hysteria2
+  server: 198.247.124.187
+  port: 23456
+  password: dongtaiwang.com
+  sni: www.bing.com
+  skip-cert-verify: true
   alpn:
   - h3
-  protocol: udp
-  up: 20 Mbps
-  down: 20 Mbps
+  udp: true
+- name: Unknown_hysteria2_191
+  type: hysteria2
+  server: 198.247.124.187
+  port: 23456
+  password: dongtaiwang.com
+  sni: www.bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+  udp: true
 - name: Unknown_hysteria_201
   type: hysteria
   server: 62.210.124.132
@@ -271,18 +249,16 @@ proxies:
   protocol: udp
   up: 11 Mbps
   down: 55 Mbps
-- name: Unknown_hysteria_211
-  type: hysteria
-  server: 62.210.70.191
-  port: 23556
-  auth-str: github.com/Alvin9999-newpac/fanqiang
-  sni: bing.com
+- name: Unknown_hysteria2_211
+  type: hysteria2
+  server: 2001:bc8:32d7:17b::17
+  port: 22000
+  password: dongtaiwang.com
+  sni: www.microsoft.com
   skip-cert-verify: true
   alpn:
   - h3
-  protocol: udp
-  up: 11 Mbps
-  down: 55 Mbps
+  udp: true
 - name: Unknown_hy_0
   type: hysteria
   server: 137.175.82.41
@@ -402,27 +378,27 @@ proxy-groups:
   - 自动选择
   - DIRECT
   - Unknown_hysteria_01
-  - Unknown_hysteria_11
-  - Unknown_hysteria_21
-  - Unknown_hysteria_31
-  - Unknown_hysteria_41
-  - Unknown_hysteria_51
+  - Unknown_hysteria2_11
+  - Unknown_hysteria2_21
+  - Unknown_hysteria2_31
+  - Unknown_hysteria2_41
+  - Unknown_hysteria2_51
   - Unknown_hysteria_61
-  - Unknown_hysteria_71
-  - Unknown_hysteria_81
-  - Unknown_hysteria_91
-  - Unknown_hysteria_101
-  - Unknown_hysteria_111
+  - Unknown_hysteria2_71
+  - Unknown_hysteria2_81
+  - Unknown_hysteria2_91
+  - Unknown_hysteria2_101
+  - Unknown_hysteria2_111
   - Unknown_hysteria_121
   - Unknown_hysteria_131
-  - Unknown_mieru_141
-  - Unknown_hysteria_151
+  - Unknown_hysteria2_141
+  - Unknown_hysteria2_151
   - Unknown_hysteria_161
   - Unknown_hysteria_171
-  - Unknown_mieru_181
-  - Unknown_hysteria_191
+  - Unknown_hysteria2_181
+  - Unknown_hysteria2_191
   - Unknown_hysteria_201
-  - Unknown_hysteria_211
+  - Unknown_hysteria2_211
   - Unknown_hy_0
   - Unknown_hy_1
   - Unknown_hy_2
@@ -438,27 +414,27 @@ proxy-groups:
   tolerance: 50
   proxies:
   - Unknown_hysteria_01
-  - Unknown_hysteria_11
-  - Unknown_hysteria_21
-  - Unknown_hysteria_31
-  - Unknown_hysteria_41
-  - Unknown_hysteria_51
+  - Unknown_hysteria2_11
+  - Unknown_hysteria2_21
+  - Unknown_hysteria2_31
+  - Unknown_hysteria2_41
+  - Unknown_hysteria2_51
   - Unknown_hysteria_61
-  - Unknown_hysteria_71
-  - Unknown_hysteria_81
-  - Unknown_hysteria_91
-  - Unknown_hysteria_101
-  - Unknown_hysteria_111
+  - Unknown_hysteria2_71
+  - Unknown_hysteria2_81
+  - Unknown_hysteria2_91
+  - Unknown_hysteria2_101
+  - Unknown_hysteria2_111
   - Unknown_hysteria_121
   - Unknown_hysteria_131
-  - Unknown_mieru_141
-  - Unknown_hysteria_151
+  - Unknown_hysteria2_141
+  - Unknown_hysteria2_151
   - Unknown_hysteria_161
   - Unknown_hysteria_171
-  - Unknown_mieru_181
-  - Unknown_hysteria_191
+  - Unknown_hysteria2_181
+  - Unknown_hysteria2_191
   - Unknown_hysteria_201
-  - Unknown_hysteria_211
+  - Unknown_hysteria2_211
   - Unknown_hy_0
   - Unknown_hy_1
   - Unknown_hy_2
